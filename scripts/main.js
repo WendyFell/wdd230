@@ -20,7 +20,7 @@ try {
 		month: "long",
 		year: "numeric"
 	};
-	date2.innerHTML = `Last modified ${new Date(document.lastModified).toLocaleDateString("en-US", options)}`;
+	date2.innerHTML = `Last updated ${new Date(document.lastModified).toLocaleDateString("en-US", options)}`;
 } catch (e) {
 	alert("Error with code or your browser does not support Locale");
 }
