@@ -1,6 +1,5 @@
-
 body {
-    max-width: 400px;
+    max-width:600px;
     font-size: 16px;
     margin: 1.25rem auto;
     padding: 1.5rem;
@@ -25,20 +24,15 @@ main {
 
 img {
     border-radius: 2px;
-    /* border: 5px solid black; */
+    border: 5px solid black;
     margin: 10px;
-    /* max-width: 100%; */
-}
-footer {
-    font-size: large;
-    font-weight: bold;
+    max-width: 100%;
 }
 
 a {
     color:teal;
     font-size: 1.1em;
     text-decoration: underline;
-    
   }
 
 a:hover{
@@ -46,3 +40,4 @@ a:hover{
     background-color: teal;
     text-decoration: none;
   }
+ 
