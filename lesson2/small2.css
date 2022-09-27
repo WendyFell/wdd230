@@ -20,20 +20,24 @@ main {
     font-size: 0.8rem;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 1em;
 }
 
 section {
 	margin: 0.5rem;
 	border: 1px solid black;
     border-radius: 5px;
-	padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
-h2 {
+main section h2 {
+    margin: 0;
     background-color: teal;
 	color: white;
     padding: 10px 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     text-align: center;
 }
 
@@ -57,13 +61,14 @@ a:hover{
 }
 
 p {
+    margin: 10px; /*test this*/
     font-size: 1.4em;
 }
 
 img {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-    margin-top: 10px;
+    margin-top: 10px;   
     border-radius: 5px;
 }
 
