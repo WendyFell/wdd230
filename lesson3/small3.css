@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #9FC2AB; /*cambridge blue*/
+    --secondary-color: #E8756D; /*light coral*/
+    --accent1-color: #BC4242; /*deep chestnut*/
+    --accent2-color: #473B37; /*dark lava*/
+    --accent3-color: #597367; /*hookers green*/
+
+    --headline-color-on-white: #597367;  /* headlines on a white background */ 
+    --headline-color-on-color: #FCFAF9; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #473B37; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FCFAF9; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #9FC2AB;
+    --nav-link-color: #9FC2AB;
+    --nav-background-color: #473B37;
+    --nav-hover-link-color: #BC4242;
+    --nav-hover-background-color: #9FC2AB;
+}
+
+/* h1 = 2em/32px  h2 = 1.5em/24px  h3 = 1.17em/18.67px  h4 = 1em/16px  h5 = 0.83em/13.33px  h6 = 0.67em/10.67px */
+
+/* phone or baseline views **************************/
+body {
+    max-width: 1000px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+header, 
+footer {
+    background-color: #597367;
+    color: #FCFAF9;
+    border: 3px solid #473B37;
+    border-radius: 5px;   
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+}
+
+nav { 
+    background-color: #473B37;
+    margin: 0 auto;
+
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    padding-inline-start: 0;
+}
+nav ul li a {
+	display: block;
+	color: #9FC2AB;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+a:hover {    
+    color: #BC4242;
+    background-color: #9FC2AB;
+    text-decoration: none;    
+}
+
+main {
+    margin: 15px;
+}
+h2, h3, h4 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h2 {
+    background-color: #E9837C;
+    padding: 1.1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+p, ol {
+    font-family: Poppins, serif;
+    color: #473B37;
+}
+
+.colors {
+    width: auto;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;    
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.colors th {
+    background-color: #E9837C;
+    padding: 15px;
+}
+
+td {
+    padding: 10px;
+}
+
+.table-head {
+    background-color: #597367;
+    color: #FCFAF9;
+    font-size: 2em;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.table-nav {
+    background-color: #473B37;
+    color: #9FC2AB;
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.table-foot {
+    background-color: #597367;
+    color: #FCFAF9;
+    font-size: 1em;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.table-h1 {
+    background-color: white;
+    color: #473B37;
+    font-size: 2em;
+    font-family: "IBM Plex Serif", serif;
+}
+.table-h2 {
+    background-color: #E9837C;
+    color: #473B37;
+    font-size: 1.5em;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.table-h3 {
+    background-color: white;
+    color: #473B37;
+    font-size: 1.17em;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.table-hover {
+    background-color: #9FC2AB;
+    color: #BC4242;
+    font-size: 1.5rem;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.table-paragraph {
+    background-color: White;
+    color: #473B37;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+

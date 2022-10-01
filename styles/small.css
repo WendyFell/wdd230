@@ -5,7 +5,8 @@ body {
     padding: 1.5rem;
 }
 
-header, footer {
+header, 
+footer {
     background-color: teal;
     color: white;
     border: 3px solid black;
