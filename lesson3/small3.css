@@ -1,20 +1,18 @@
-:root {
-    --primary-color: #9FC2AB; /*cambridge blue*/
-    --secondary-color: #E8756D; /*light coral*/
-    --accent1-color: #BC4242; /*deep chestnut*/
-    --accent2-color: #473B37; /*dark lava*/
-    --accent3-color: #597367; /*hookers green*/
+/* --primary-color: #9FC2AB; /*cambridge blue*/
+/* --secondary-color: #E8756D; /*light coral*/
+/* --accent1-color: #BC4242; /*deep chestnut*/
+/* --accent2-color: #473B37; /*dark lava*/
+/* --accent3-color: #597367; /*hookers green*/
 
-    --headline-color-on-white: #597367;  /* headlines on a white background */ 
-    --headline-color-on-color: #FCFAF9; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #473B37; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #FCFAF9; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #9FC2AB;
-    --nav-link-color: #9FC2AB;
-    --nav-background-color: #473B37;
-    --nav-hover-link-color: #BC4242;
-    --nav-hover-background-color: #9FC2AB;
-}
+/* --headline-color-on-white: #597367;  /* headlines on a white background */ 
+/* --headline-color-on-color: #FCFAF9; /* headlines on a colored background */ 
+/* --paragraph-color-on-white: #473B37; /* paragraph text on a white background */ 
+/* --paragraph-color-on-color: #FCFAF9; /* paragraph text on a colored background */ 
+/* --paragraph-background-color: #9FC2AB;
+/* --nav-link-color: #9FC2AB;
+/* --nav-background-color: #473B37;
+/* --nav-hover-link-color: #BC4242;
+/* --nav-hover-background-color:  #afcfba;*/ 
 
 /* h1 = 2em/32px  h2 = 1.5em/24px  h3 = 1.17em/18.67px  h4 = 1em/16px  h5 = 0.83em/13.33px  h6 = 0.67em/10.67px */
 
@@ -31,8 +29,12 @@ footer {
     color: #FCFAF9;
     border: 3px solid #473B37;
     border-radius: 5px;   
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Merriweather', serif;
     text-align: center;
+}
+
+footer {
+    color: #FCFAF9;
 }
 
 nav { 
@@ -56,7 +58,7 @@ nav ul li a {
 
 a:hover {    
     color: #BC4242;
-    background-color: #9FC2AB;
+    background-color: #afcfba;
     text-decoration: none;    
 }
 
@@ -64,7 +66,7 @@ main {
     margin: 15px;
 }
 h2, h3, h4 {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Merriweather', serif;
 }
 
 h2 {
@@ -143,7 +145,8 @@ td {
 }
 
 .table-hover {
-    background-color: #9FC2AB;
+    background-color: #afcfba;
+    
     color: #BC4242;
     font-size: 1.5rem;
     font-family: "IBM Plex Serif", serif;
