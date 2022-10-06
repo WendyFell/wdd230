@@ -1,1 +1,105 @@
+header, footer {
+    background-color: #597367;
+    color: #FCFAF9;
+    border: 3px solid #473B37;
+    border-radius: 5px;   
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding: 10px;
+}
 
+header {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo-heading {
+    display: flex;
+    flex-direction: column;
+}
+.logo-heading h1 {
+    margin: .05px;
+}
+
+nav { 
+    background-color: #473B37;
+    margin: 0 auto;
+    text-align: left;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #9FC2AB;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    padding-inline-start: 0;
+    margin: 0;
+}
+nav ul li a {
+	display: block;
+	color: #9FC2AB;
+	
+	padding: 0.75rem 2vw;
+	text-decoration: none;
+	font-size: 1.5rem;
+    border-top: 1px solid #afcfba;
+}
+
+nav ul li.active a {
+    background-color: #E9837C;
+    color: #473B37;
+}
+
+nav ul li a:hover {    
+    color: #BC4242;
+    background-color: #afcfba; 
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamBtn span:nth-child(1) {display: block;}
+#hamBtn span:nth-child(2) {display: none;}
+
+#hamBtn.open span:nth-child(1) {display: none;}
+#hamBtn.open span:nth-child(2) {display: block;}
+
+
+main {
+    margin: 15px;
+}
+h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    background-color: #E9837C;
+    padding: 1.1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+p {
+    font-family: Poppins, serif;
+    color: #473B37;
+}
+
+.date-box {
+    background-color: #afcfba;
+    border: 1px solid #473B37;
+    color: #473B37;
+    padding: 0.75rem;
+}
