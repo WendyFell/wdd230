@@ -3,5 +3,35 @@
         width: 33px;
         height: auto;
     }
-  
+    .footer {
+        display: flex;
+        align-items: center;
+	    justify-content: space-between;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    .logo-foot {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        
+    }
+    
+    .logo-heading-foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .logo-heading-foot h1 {
+        margin: .05px;
+    } */
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+
+    }
 }

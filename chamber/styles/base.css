@@ -127,3 +127,12 @@ p {
     color: #473B37;
     padding: 0.75rem;
 }
+
+.logo-heading-foot h1 {
+    font-size: .8rem;
+    margin: .05px;
+}
+.logo-heading-foot {
+    font-size: .8rem;
+    margin: .05px;
+}
