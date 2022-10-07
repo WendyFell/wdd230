@@ -88,7 +88,14 @@ nav ul.open {display: block;}
 .social {
     grid-column: 2/3;
     grid-row: 2/3;
+    margin-right: 1.5rem;
 }
+
+.social svg {
+	width: 25px;
+	height: auto;
+}
+
 .date-box {
     grid-column: 1/4;
     grid-row: 4/5;
