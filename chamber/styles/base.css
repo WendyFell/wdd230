@@ -18,16 +18,17 @@ header, footer {
 }
 
 .logo img {
-	width: 100px;
+	width: 80px;
 	height: auto;
 }
 
 .logo-heading {
     display: flex;
     flex-direction: column;
+    margin: .05px;
 }
 .logo-heading h1 {
-    margin: .05px;
+    font-size: 1.5rem;
 }
 
 nav { 
@@ -104,6 +105,10 @@ nav ul.open {display: block;}
 .date-box {
     grid-column: 1/4;
     grid-row: 4/5;
+    background-color: #afcfba;
+    border: 1px solid #473B37;
+    color: #473B37;
+    padding: 0.75rem;
 }
 
 main {
@@ -126,13 +131,6 @@ p {
     color: #473B37;
 }
 
-.date-box {
-    background-color: #afcfba;
-    border: 1px solid #473B37;
-    color: #473B37;
-    padding: 0.75rem;
-}
-
 .logo-heading-foot h1 {
     font-size: .8rem;
     margin: .05px;
@@ -140,4 +138,8 @@ p {
 .logo-heading-foot {
     font-size: .8rem;
     margin: .05px;
+}
+.foot-info {
+    padding: 10px;
+    border-top: 1px solid #afcfba;
 }
