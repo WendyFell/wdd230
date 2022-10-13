@@ -180,7 +180,7 @@ p {
 }
 
 .join {    
-    background: #E2FBF7;
+    background: radial-gradient(#45C3B7 #E2FBF7);
     position: absolute;
     bottom: 25px;
 	right: 50px;
