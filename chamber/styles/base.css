@@ -1,10 +1,28 @@
+/*
+#7F626B Brown purple
+#C76035 Rust
+ #63D6D0 aqua
+ #BC958E light brown
+#2F8A81 dark teal
+#45C3B7 med teal
+#FFEAC2 Cream
+#614F5D Dark purple gray brown
+#FFBC95 peach
+#EC8D71 dark peach
+#BA381E dark rust
+#C69E9F light purple gray brown
+#B6F3EB light aqua
+#E2FBF7 light light aqua
+#E9FBFB almost white bluish
+*/
 body {
     margin: 10px;
+    background-color: #E9FBFB;
 }
 header, footer {
-    background-color: #597367;
-    color: #FCFAF9;
-    border: 3px solid #473B37;
+    background-color: #2D746E;
+    color: #E9FBFB;
+    border: 3px solid #614F5D;
     border-radius: 5px;   
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -33,7 +51,7 @@ header, footer {
 }
 
 nav { 
-    background-color: #473B37;
+    background-color: #614F5D;
     margin: 0 auto;
     text-align: left;
 }
@@ -43,7 +61,7 @@ nav button {
     background: transparent;
     border: none;
     font-size: 2rem;
-    color: #9FC2AB;
+    color: #FFBC95;
 }
 
 nav ul {
@@ -54,21 +72,21 @@ nav ul {
 }
 nav ul li a {
 	display: block;
-	color: #9FC2AB;	
+	color: #B6F3EB;	
 	padding: 0.75rem 2vw;
 	text-decoration: none;
 	font-size: 1.5rem;
-    border-top: 1px solid #afcfba;
+    border-top: 1px solid #B6F3EB;
 }
 
 nav ul li.active a {
-    background-color: #E9837C;
-    color: #473B37;
+    background-color: #EC8D71;
+    color: #614F5D;
 }
 
 nav ul li a:hover {    
-    color: #BC4242;
-    background-color: #afcfba; 
+    color: #BA381E;
+    background-color: #B6F3EB; 
 }
 
 nav ul {display: none;}
@@ -100,14 +118,13 @@ nav ul.open {display: block;}
 
 #hamBtn {
     font-size: 1.5rem;
+    color: #FFBC95;
 }
 
-
-
 .date-box {    
-    background-color: #afcfba;
-    border: 1px solid #473B37;
-    color: #473B37;
+    background-color: #B6F3EB;
+    border: 1px solid #614F5D;
+    color: #614F5D;
     padding: 0.75rem;
 }
 
@@ -119,7 +136,7 @@ h2, h3, h4 {
 }
 
 h2 {
-    background-color: #E9837C;
+    background-color: #FFEAC2;
     padding: 1.1rem;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -128,7 +145,7 @@ h2 {
 
 p {
     font-family: Poppins, serif;
-    color: #473B37;
+    color: #614F5D;
 }
 
 .logo-heading-foot h1 {
@@ -141,5 +158,10 @@ p {
 }
 .foot-info {
     padding: 10px;
-    border-top: 1px solid #afcfba;
+    border-top: 1px solid #E9FBFB;
 }
+.logo-foot img {
+    width: 150px;
+	height: auto;
+}
+
