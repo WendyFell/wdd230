@@ -96,13 +96,14 @@ nav ul.open {display: block;}
     display: flex;
     align-items: center;
     justify-content: center ;
-    }
+}
 .logo {
    padding: 10px;
 }
 
 .social {
    padding: 10px;
+   margin: 5px auto;
 }
 
 .social svg {
@@ -165,3 +166,29 @@ p {
 	height: auto;
 }
 
+.hero {
+    margin: 10px auto;
+    position: relative;
+    width: 700px;
+    height: 350px;
+    
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+}
+
+.join {    
+    background: #E2FBF7;
+    position: absolute;
+    bottom: 25px;
+	right: 50px;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1.3rem;
+	box-shadow: 0 0 30px #614F5D;
+	opacity: 0.8;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.2rem;
+}
