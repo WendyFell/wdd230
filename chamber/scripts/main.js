@@ -23,3 +23,19 @@ function toggleMenu () {
 
 const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;
+
+// Get the meet and greet button to show only on Monday and Tuesdays
+const d = new Date();
+let day = d.getDay()
+
+if (day === 1) {
+    document.getElementById("meet").style.display = "";
+}
+else if (day === 4) {
+    document.getElementById("meet").style.display = "";
+}
+else {
+    document.getElementById("meet").style.display = "none";
+}
+
+

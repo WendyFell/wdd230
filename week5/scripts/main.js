@@ -23,7 +23,5 @@ button.addEventListener('click', () => {
     delBtn.addEventListener('click', () => {
         list.removeChild(listItem);
     });
-
     input.focus();
-
 });
