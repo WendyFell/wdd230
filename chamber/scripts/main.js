@@ -31,7 +31,7 @@ let day = d.getDay()
 if (day === 1) {
     document.getElementById("meet").style.display = "";
 }
-else if (day === 4) {
+else if (day === 2) {
     document.getElementById("meet").style.display = "";
 }
 else {

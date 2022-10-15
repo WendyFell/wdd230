@@ -72,6 +72,15 @@
         display: block;
         grid-column: 4 / 5;
         grid-row: 1 / 4;
+        row-gap: 10px;
+    }
+    
+    .spot-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .spot {
+        gap: 10px;
     }
 
     .join-box {
@@ -79,6 +88,6 @@
         grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
-    }
+    
 }
 
