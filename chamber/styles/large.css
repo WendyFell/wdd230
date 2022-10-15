@@ -84,10 +84,23 @@
     }
 
     .join-box {
-        display: block;
+        display: grid;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
     }
-    
+   
+    .joinBtn {
+        background: radial-gradient(#FFEAC2, #FFBC95);
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 1.3rem;
+        box-shadow: 0 0 30px #614F5D;
+        opacity: 0.8;
+        border-radius: 5px;
+        font-family: Poppins, sans-serif;
+        font-size: 1.2rem;   
+        margin-left: auto;
+    }
+
+
 }
 

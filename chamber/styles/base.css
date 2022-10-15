@@ -158,6 +158,7 @@ h2 {
     text-align: center;
     color: #614F5D;
     font-size: 1.2rem;
+    border: 1px solid #C69E9F;
 }
 
 .main {
@@ -168,11 +169,15 @@ h2 {
 
 .hero {
     margin: 10px auto;
-    position: relative;    
+    padding: 10px;
+    position: relative;
+    border: 3px solid #7F626B;
+    border-radius: 5px;    
 }
 
 .hero img {
-    width: 100%;    
+    width: 100%;
+    border-radius: 5px;    
 }
 
 .join {    
@@ -182,7 +187,7 @@ h2 {
 	right: 50px;
 	border: 1px solid rgba(0,0,0,.1);
 	padding: 1.3rem;
-	/* box-shadow: 0 0 30px #614F5D; */
+	box-shadow: 0 0 30px #614F5D;
 	opacity: 0.8;
     border-radius: 5px;
     font-family: Poppins, sans-serif;
@@ -194,6 +199,7 @@ h2 {
     /* box-shadow: 0 0 20px #614F5D; */
     padding: 10px;  
     border: 1px solid #2F8A81;  
+    border-radius: 5px;
 }
 
 .spotlight {
@@ -216,6 +222,7 @@ h2 {
     text-align: center;
     color: #614F5D;
     font-size: 1.2rem;
+    border: 1px solid #C69E9F;
 }
 
 .spot:nth-child(3) {
@@ -225,3 +232,4 @@ h2 {
 .join-box {
     display: none;
 }
+
