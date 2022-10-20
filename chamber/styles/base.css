@@ -1,7 +1,7 @@
 /* general */
 body {
     margin: 10px;
-    background-color: #E9FBFB;
+    background-color: #614F5D;
 }
 header, footer {
     background-color: #2D746E;
@@ -152,14 +152,6 @@ nav ul.open {display: block;}
 main {
     margin: 15px;
 }
-h2 {
-    background-color: #FFEAC2;
-    padding: .8rem;
-    text-align: center;
-    color: #614F5D;
-    font-size: 1.2rem;
-    border: 1px solid #C69E9F;
-}
 
 .main {
     display: grid;
@@ -171,8 +163,11 @@ h2 {
     margin: 10px auto;
     padding: 10px;
     position: relative;
-    border: 3px solid #7F626B;
-    border-radius: 5px;    
+    border-top: 10px solid #C69E9F;
+    border-bottom: 10px solid #C69E9F;
+    border-radius: 5px;   
+    background-color: #FFEAC2 ; 
+    
 }
 
 .hero img {
@@ -196,10 +191,60 @@ h2 {
 
 .boxes {
     background-color: #B6F3EB;
-    /* box-shadow: 0 0 20px #614F5D; */
     padding: 10px;  
     border: 1px solid #2F8A81;  
     border-radius: 5px;
+}
+
+h2 {
+    background-color: #FFEAC2;
+    padding: .8rem;
+    text-align: center;
+    color: #614F5D;
+    font-size: 1.2rem;
+    border-top: 5px solid #C69E9F;
+}
+
+.weather {
+    display: grid;	
+	grid-template-columns: 1fr 1fr;   
+    margin: 0 auto;  
+}
+.w-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-content: center;
+}
+.w-icon {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+
+}
+.w-temp {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;	
+    font-size: 2em;
+}
+.w-desc {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;	
+    font-size: 1.5em;
+}
+.w-speed {
+    grid-column: 1/3;
+    grid-row: 4/5;	
+    border-top: 2px solid #614F5D;
+    text-align: center;
+    font-size: 1.5em;
+}
+.w-chill {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .spotlight {
