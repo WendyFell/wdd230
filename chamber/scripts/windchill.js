@@ -13,9 +13,11 @@ else {
     const getWindChill = (t, s) => {
         return 35.74 + (0.6215 * t) - (35.75 * (s ** 0.16)) + (0.4275 * (t * (s ** 0.16)))
     }
-
-    document.getElementById("windChill").innerHTML = getWindChill(t, s)
+    
+    document.getElementById("windChill").innerHTML = getWindChill(t, s).toFixed(0)
 }
+
+
 
 document.getElementById("degree").innerHTML = "°F"
 document.getElementById("km").innerHTML = "km/h"

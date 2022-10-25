@@ -279,3 +279,14 @@ h2 {
     display: none;
 }
 
+
+.discover-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+}
+
+
