@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover West Jordan</title>
-    <meta name="description" content="See all that West Jordan has to offer. From this to that.">
+    <title>West Jordan Chamber of Commerce</title>
+    <meta name="description" content="Home page for the West Jordan Chamber of Commerce.">
     <link rel="icon shortcut" href="favicon1.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,70 +52,93 @@
                         </g>
                     </svg></a>
             </div>
-        
+
             <nav class="nav-bar header-item">
                 <button id="hamBtn"><span>&#9776;</span><span>X Close</span></button>
                 <ul id="navigation">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="navLink" href="index.html">Home</a></li>
+                    <li><a class="navLink" href="discover.html">Discover</a></li>
+                    <li><a class="navLink" href="#">Directory</a></li>
+                    <li><a class="navLink" href="#">Join</a></li>
+                    <li><a class="navLink" href="#">Contact</a></li>
                 </ul>
             </nav>
-        </div>   
+        </div>  
+
+        <div class="date-box">Today is <span id="date"></span></div>
+        <div id="meet" class="meet">
+            <div>
+                🤝🏽 Come join us for the meet and greet this Wednesday at 7:00 p.m.
+            </div>
+        </div>    
     </header>
+
+    <main>
+        <h2>See what we have here</h2>
+        <div class="discover-container">
+            
+            <div class="img-wrapper">
+                <div class="boxes hero section1">
+                    <picture class="image">
+                        <img src="https://via.placeholder.com/300/200" data-src="images/center-park-400-200.jpg" alt="West Jordan Center Park">
+                    </picture>
+                    <div class="content">There is approximately 4,600 acres of undeveloped land in West Jordan.</div>
+                </div>
+        
+                <div class="boxes hero section2">
+                    <picture>
+                        <img src="https://via.placeholder.com/400/200" data-src="images/gardner-village-400-200.jpg" alt="Gardner Village from above">
+                    </picture>
+                    <div class="content">West Jordan is minutes away from I-80, I-15, and 20 minutes to Salt Lake International Airport.</div>
+                </div>
+        
+                <div class="boxes hero section3">
+                    <picture>
+                        <img src="https://via.placeholder.com/400/200" data-src="images/town-hall-500-333.jpg" alt="West Jordan City Hall">
+                    </picture>
+                    <div class="content">There are 40 universities within a 40 mile radius.</div>
+                </div>
+        
+                <div class="boxes hero section4">
+                    <picture>
+                        <img src="https://via.placeholder.com/400/200" data-src="images/jordan-landing-400-200.jpg" alt="Jordan Landing">
+                    </picture>
+                    <div class="content">Nearly 700,000 eligible employees within 40 miles.</div>
+                </div>
+                
+                <div class="boxes hero section5">
+                    <picture>
+                        <img src="https://via.placeholder.com/400/200" data-src="images/winter-homes-500-334.jpg" alt="Homes in West Jordan">
+                    </picture>
+                    <div class="content">West Jordan is the third largest city in Utah.</div>
+                </div>     
+            </div>  
+        </div> 
+    </main>
+ 
     
-    <div class="discover-container">
-        <h2>See what we have here?</h2>
-        <div class="boxes discover-container section1">
-            <picture class="image">
-                <img src="https://via.placeholder.com/400/200" data-src="images/center-park-400-200.jpg" alt="West Jordan Center Park">
-            </picture>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque itaque deserunt totam molestias numquam nisi inventore. Ut, quibusdam eveniet.</p>
-        </div>
-
-        <div class="boxes discover-container section2">
-            <picture>
-                <img src="https://via.placeholder.com/400/200" data-src="images/gardner-village-400-200.jpg" alt="Gardner Village from above">
-            </picture>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facilis quia asperiores natus doloribus. Nemo laborum numquam eveniet ex nobis sapiente in libero fuga, iure, autem, beatae quia a accusantium?</p>
-        </div>
-
-        <div class="boxes discover-container section3">
-            <picture>
-                <img src="https://via.placeholder.com/400/200" data-src="images/mayor-400-200.jpg" alt="West Jordan City Hall">
-            </picture>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis.</p>
-        </div>
-
-        <div class="boxes discover-container section4">
-            <picture>
-                <img src="https://via.placeholder.com/400/200" data-src="images/jordan-landing-400-200.jpg" alt="Jordan Landing">
-            </picture>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aut at totam voluptatibus dolores quo molestiae earum rerum quia nesciunt.</p>
-        </div>
+    <footer>
+        <div class="footer">
+            <div class="logo-foot">
+                <picture>
+                    <img src="images/tree-logo1.webp" alt="Tree logo">
+                </picture>
+                <div class="logo-heading-foot">
+                    <div>West Jordan Chamber of Commerce</div>
+                    <div>Address</div>
+                </div>                
+            </div>
+            <div class="contact">
+                <div>Contact Info</div>
+                <div>Phone number</div>
+                <div>Icon + Location Map</div>
+            </div> 
+        </div>           
+        <div class="foot-info">&copy;<span id="year"></span> West Jordan Chamber | Wendy Fellows | WDD230 Project | Last updated: <span id="date2"></span></div>
         
-        <div class="boxes discover-container section5">
-            <picture>
-                <img src="https://via.placeholder.com/400/200" data-src="images/homes-400-200.jpg" alt="Homes in West Jordan">
-            </picture>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus voluptas, ad assumenda vero facere nesciunt eaque? Minus vel molestiae distinctio aliquid, voluptatibus ipsa exercitationem ex, quasi blanditiis error cumque.</p>
-        </div>
-        
-
-        
-
-        
-
-
-            
-           
-            
-            
-    </div>   
+    </footer> 
+    <script defer src="scripts/main.js"></script>
     
-
     <script defer src="scripts/imageload.js"></script>
 </body>
 </html>

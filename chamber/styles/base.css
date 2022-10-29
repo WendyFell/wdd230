@@ -72,11 +72,6 @@ nav ul li a {
     border-top: 1px solid #B6F3EB;
 }
 
-nav ul li.active a {
-    background-color: #EC8D71;
-    color: #614F5D;
-}
-
 nav ul li a:hover {    
     color: #BA381E;
     background-color: #B6F3EB; 
@@ -84,6 +79,12 @@ nav ul li a:hover {
 
 nav ul {display: none;}
 nav ul.open {display: block;}
+
+.navLink[aria-current="page"] {
+    background-color: #EC8D71;
+    color: #614F5D;
+}
+
 
 .header {
     display: flex;
@@ -279,14 +280,26 @@ h2 {
     display: none;
 }
 
-
+ 
 .discover-container {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex-shrink: 1;
     align-items: stretch;
     justify-content: center;
     text-align: center;
+    max-width: 50%;
+    margin: auto;
+} 
+
+
+/* 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
-
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+} */
