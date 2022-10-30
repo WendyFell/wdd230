@@ -14,7 +14,7 @@ header, footer {
 }
 p {
     font-family: Poppins, serif;
-    color: #614F5D;
+    color: #343334;
 }
 h2, h3, h4 {
     font-family: 'Merriweather', serif;
@@ -280,26 +280,25 @@ h2 {
     display: none;
 }
 
- 
-.discover-container {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
-    max-width: 50%;
-    margin: auto;
-} 
-
-
-/* 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr;
+    
 }
 
 .img-wrapper {
     position: relative;
     overflow: hidden;
-} */
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    object-position: center;
+    
+   
+}
+
+

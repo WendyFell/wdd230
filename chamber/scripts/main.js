@@ -6,6 +6,29 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = fulldate;
 
+// Getting the time since last visit
+const lastVisitDisplay = document.querySelector("#lastVisitDisplay");
+
+// get the stored value of the last visit in local storage
+let lastVisit = localStorage.getItem("time-ls");
+
+// Check if last item is stored, if it is null, it will be the first visit.
+
+if (lastVisit !== 0) {
+    lastVisitDisplay.textContent = lastVisit;  
+ } else {
+   lastVisitDisplay.textContent =  "This is your first visit";
+ };
+
+// Math to get the time from the last visit until now.
+lastVisit = now - lastVisit;
+// lastVisit = lastVisit / 60000;
+
+
+// Set the amount in local storage
+localStorage.setItem("time-ls", lastVisit);
+
+
 
 // Getting the current year
 const date1 = document.querySelector("#year");

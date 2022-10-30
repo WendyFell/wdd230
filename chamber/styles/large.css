@@ -102,7 +102,15 @@
         margin-left: auto;
     }
 
-    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .img-wrapper,
+    .space {
+        grid-column: 2 / 4;
+    }
 
 }
 
