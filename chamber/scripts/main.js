@@ -14,14 +14,14 @@ let lastVisit = localStorage.getItem("time-ls");
 
 // Check if last item is stored, if it is null, it will be the first visit.
 
-if (lastVisit !== "null") {
+if (lastVisit !== null) {
     lastVisitDisplay.textContent = lastVisit;  
  } else {
    lastVisitDisplay.textContent =  "This is your first visit";
  };
 
 // Math to get the time from the last visit until now.
-lastVisit = now - lastVisit;
+lastVisit = now - (lastVisit / 60000);
 // lastVisit = lastVisit / 60000;
 
 
@@ -74,3 +74,9 @@ document.querySelectorAll(".navLink").forEach(link => {
         link.setAttribute("aria-current", "page")
     }
 });
+
+
+// Form
+const obj = /\w-/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
