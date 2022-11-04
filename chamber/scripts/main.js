@@ -14,7 +14,7 @@ let lastVisit = localStorage.getItem("time-ls");
 
 // Check if last item is stored, if it is null, it will be the first visit.
 
-if (lastVisit !== 0) {
+if (lastVisit !== "null") {
     lastVisitDisplay.textContent = lastVisit;  
  } else {
    lastVisitDisplay.textContent =  "This is your first visit";
