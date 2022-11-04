@@ -71,13 +71,25 @@
 
     <main class="main">
         <form method="get" action="thankyou.html">
-            <label class="field1">First Name* <input type="text" name="fname" required></label>
-            <label class="field1">Last Name* <input type="text" name="lname" required></label>
-            <label class="field1">Title <input id="text" type="title" name="title" pattern="[\w-]" title="8 characters max, no symbols except '-'." maxlength="8"></label>
-            <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com"></label>
-            <label class="field1">Phone* <input type="tel" name="phone" required placeholder="1235551234"></label>
-            <label class="field1">Business Name* <input type="text" name="busName" required></label>
-
+            <fieldset>
+                <legend>Membership Information</legend>
+                    <label class="field1">Business Name* <input type="text" name="busName" required></label>
+                    
+            </fieldset>
+            <fieldset>
+                <legend>Primary Contact</legend>
+            
+                    <label class="field1">First Name* <input type="text" name="fname" required></label>
+                    <label class="field1">Last Name* <input type="text" name="lname" required></label>
+                    <label class="field1">Title <input id="text" type="title" name="title" pattern="[\w-]" title="8 characters max, no symbols except '-'." maxlength="8"></label>
+                    <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com"></label>
+                    <label class="field1">Cell Phone Number* <input type="tel" name="phone" required placeholder="1235551234"></label>
+                    
+            </fieldset>
+            <fieldset>
+                <legend>Membership Levels</legend>
+            
+            </fieldset>
         </form>
         
     </main>

@@ -77,6 +77,3 @@ document.querySelectorAll(".navLink").forEach(link => {
 
 
 // Form
-const obj = /\w-/.exec("The best things in life are free!");
-document.getElementById("demo").innerHTML =
-"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
