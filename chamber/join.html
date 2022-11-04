@@ -65,15 +65,16 @@
             </nav>
         </div>  
 
-        <div class="date-box">Today is <span id="date"> </span> | Time since last visit: <span id="lastVisitDisplay"></span> minutes</div>
+        <div class="date-box">Today is <span id="date"> </span> |  <span id="lastVisitDisplay"></span></div>
           
     </header>
 
     <main class="main">
-        <form method="get" action="thankyou.html">
+        <form method="get" action="thankyou.html" target="_blank">
             <fieldset>
                 <legend>Membership Information</legend>
                     <label class="field1">Business Name* <input type="text" name="busName" required></label>
+                    <label class="field1">Business Description* <textarea type="text" name="busDesc" rows="4" cols="50"></textarea></label>
                     
             </fieldset>
             <fieldset>
@@ -81,15 +82,20 @@
             
                     <label class="field1">First Name* <input type="text" name="fname" required></label>
                     <label class="field1">Last Name* <input type="text" name="lname" required></label>
-                    <label class="field1">Title <input id="text" type="title" name="title" pattern="[\w-]" title="8 characters max, no symbols except '-'." maxlength="8"></label>
+                    <label class="field1">Title <input id="text" type="title" name="title" pattern="*[A-Z][a-z]" title="8 characters max, no symbols except '-'." maxlength="8"></label>
                     <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com"></label>
-                    <label class="field1">Cell Phone Number* <input type="tel" name="phone" required placeholder="1235551234"></label>
+                    <label class="field1">Cell Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234"></label>
                     
             </fieldset>
             <fieldset>
                 <legend>Membership Levels</legend>
-            
+                <input type="radio" name="membership" value="NP Membership" id="levelNP"><label for="levelNP" class="field2"> NP Membership</label><br>
+                <input type="radio" name="membership" value="npMembership" id="levelBronze"><label for="levelBronze" class="field2"> Bronze Membership</label><br>
+                <input type="radio" name="membership" value="npMembership" id="levelSilver"><label for="levelSilver" class="field2"> Silver Membership</label><br>
+                <input type="radio" name="membership" value="npMembership" id="levelGold"><label for="levelGold" class="field2"> Gold Membership</label><br>
             </fieldset>
+            
+            <button type="submit"></button>
         </form>
         
     </main>

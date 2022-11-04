@@ -15,14 +15,17 @@ let lastVisit = localStorage.getItem("time-ls");
 // Check if last item is stored, if it is null, it will be the first visit.
 
 if (lastVisit !== null) {
-    lastVisitDisplay.textContent = `${lastVisit} minutes`;  
+    
+    lastVisitDisplay.textContent = `Time since last visit: ${lastVisit} minutes`;  
+    
+    console.log(lastVisitDisplay)
  } else {
    lastVisitDisplay.textContent =  "This is your first visit";
  };
 
 // Math to get the time from the last visit until now.
-lastVisit = now - (lastVisit / 60000);
-// lastVisit = lastVisit / 60000;
+lastVisit = now - lastVisit;
+lastVisit = lastVisit / 60000;
 
 
 // Set the amount in local storage
