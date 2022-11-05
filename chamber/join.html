@@ -69,7 +69,7 @@
           
     </header>
 
-    <main class="main">
+    <main >
         <form method="get" action="thankyou.html" target="_blank">
             <fieldset>
                 <legend>Membership Information</legend>
@@ -88,14 +88,18 @@
                     
             </fieldset>
             <fieldset>
-                <legend>Membership Levels</legend>
-                <input type="radio" name="membership" value="NP Membership" id="levelNP"><label for="levelNP" class="field2"> NP Membership</label><br>
-                <input type="radio" name="membership" value="npMembership" id="levelBronze"><label for="levelBronze" class="field2"> Bronze Membership</label><br>
-                <input type="radio" name="membership" value="npMembership" id="levelSilver"><label for="levelSilver" class="field2"> Silver Membership</label><br>
-                <input type="radio" name="membership" value="npMembership" id="levelGold"><label for="levelGold" class="field2"> Gold Membership</label><br>
+                <legend>Membership Levels</legend>                
+                <label class="field2"><input type="radio" name="membership" value="levelNP" class="radio"> NP Membership</label>
+                <p class="memberDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum velit dolor nulla corrupti labore molestias quasi alias sit laborum?</p>
+                <label class="field2"><input type="radio" name="membership" value="levelBronze" class="radio" checked> Bronze Membership</label>
+                <p class="memberDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum velit dolor nulla corrupti labore molestias quasi alias sit laborum?</p>
+                <label class="field2"><input type="radio" name="membership" value="levelSilver" class="radio"> Silver Membership</label>
+                <p class="memberDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum velit dolor nulla corrupti labore molestias quasi alias sit laborum?</p>
+                <label class="field2"><input type="radio" name="membership" value="levelGold" class="radio"> Gold Membership</label>
+                <p class="memberDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum velit dolor nulla corrupti labore molestias quasi alias sit laborum?</p>               
             </fieldset>
-            
-            <button type="submit"></button>
+            <div><input type="hidden"><span id="date"></span></div>
+            <input type="submit" class="submitBtn" value = "Join the Chamber">
         </form>
         
     </main>
@@ -121,6 +125,5 @@
         
     </footer> 
     <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/windchill.js"></script>
 </body>
 </html>
