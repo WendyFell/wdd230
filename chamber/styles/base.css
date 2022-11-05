@@ -299,17 +299,17 @@ h2 {
 }
 
 form {
-    padding: 0 2%;
+    padding: .5rem 2%;
     min-height: 20rem;
     background-color: #FFEAC2;
-    
+   margin: 10px ;
 
 }
 
 form fieldset {
     margin: 2rem 1px;
     padding: .5rem 2%;
-    
+
 }
 
 form legend {
