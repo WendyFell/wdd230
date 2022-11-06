@@ -6,6 +6,7 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = fulldate;
 
+
 // Getting the time since last visit
 const lastVisitDisplay = document.querySelector("#lastVisitDisplay");
 
@@ -16,17 +17,17 @@ let lastVisit = localStorage.getItem("time-ls");
 
 if (lastVisit !== null) {
     
-    lastVisitDisplay.textContent = `Time since last visit: ${lastVisit} minutes`;  
+    lastVisitDisplay.innerHTML = `Time since last visit: ${lastVisit} minutes`;  
     
     console.log(lastVisitDisplay)
  } else {
-   lastVisitDisplay.textContent =  "This is your first visit";
+   lastVisitDisplay.innerHTML =  "This is your first visit!";
  };
 
 // Math to get the time from the last visit until now.
-lastVisit = now - lastVisit;
+const now1 = new Date()
+lastVisit = now1 - lastVisit;
 lastVisit = lastVisit / 60000;
-
 
 // Set the amount in local storage
 localStorage.setItem("time-ls", lastVisit);
@@ -79,4 +80,5 @@ document.querySelectorAll(".navLink").forEach(link => {
 });
 
 
-// Form
+
+

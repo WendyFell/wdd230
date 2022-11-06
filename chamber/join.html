@@ -70,7 +70,8 @@
     </header>
 
     <main >
-        <form method="get" action="thankyou.html" target="_blank">
+        <form method="get" action="thankyou.html" target="_blank" id="form">
+           
             <fieldset>
                 <legend>Membership Information</legend>
                     <label class="field1">Business Name* <input type="text" name="busName" required></label>
@@ -82,9 +83,10 @@
             
                     <label class="field1">First Name* <input type="text" name="fname" required></label>
                     <label class="field1">Last Name* <input type="text" name="lname" required></label>
-                    <label class="field1">Title <input id="text" type="title" name="title" pattern="*[A-Z][a-z]" title="8 characters max, no symbols except '-'." maxlength="8"></label>
-                    <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com"></label>
-                    <label class="field1">Cell Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234"></label>
+                    <label class="field1">Title <input id="text" type="title" name="title" pattern="*[A-Z][a-z]" title="8 characters max, no symbols except '-'." maxlength="8" id="title"></label>
+                    <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com" id="email"></label>
+                    <label class="field1">Cell Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234" id="phone"></label>
+                    <div><p id="output">something here</p></div>
                     
             </fieldset>
             <fieldset>
@@ -125,5 +127,6 @@
         
     </footer> 
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/form.js"></script>
 </body>
 </html>
