@@ -6,14 +6,14 @@ fetch(requestURL)
         return response.json();        
     })
     .then (function (jsonObject) {
-        console.table(jsonObject); //temporarily checking for a valid response and data parsing
         const prophets = jsonObject["prophets"];
         prophets.forEach(displayProphets);
     });
 
+
+
 function getOrdinal(n) {
-    let ord = 'th';
-    
+    let ord = 'th';    
     if (n % 10 == 1 && n % 100 != 11)
     {
         ord = 'st';
@@ -26,9 +26,7 @@ function getOrdinal(n) {
     {
         ord = 'rd';
     }
-    
     return ord;
-
 };
 
 function displayProphets(prophet) {
@@ -45,7 +43,7 @@ function displayProphets(prophet) {
     portrait.innerHTML = `${prophet.imageurl}`
 
     portrait.setAttribute("src", prophet.imageurl);    
-    portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophetOrdinal} Latter-day President`);
+    portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophetOrdinal} Latter-day Prophet`);
     portrait.setAttribute("loading", "lazy");
       
     card.appendChild(h2);

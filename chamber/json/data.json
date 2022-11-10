@@ -1,0 +1,37 @@
+{
+    "businesses": [
+      {
+        "name": "America First Credit Union",
+        "address": "Smith",
+        "phoneNumber": "23 December 1805",
+        "webUrl": "27 June 1844",
+        "membershipLevel": "Bronze",
+        "imageIconUrl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+        
+        "description": [
+            {
+                "descriptionText": "Lorem20",
+                "services": ["", "", ""]
+            }
+        ]
+      },
+      {
+        "name": "Choice Humanitarian",
+        "address": "7879 S 1530 W, Ste 200, West Jordan, UT 84088",
+        "phoneNumber": "801-474-1937",
+        "webUrl": "https://choicehumanitarian.org/",
+        "membershipLevel": "NP",
+        "imageIconUrl": "./images/choice_humanitarian_256px.png",
+        "description": [
+            {
+                "descriptionText": "Lorem20",
+                "imageUrl": "",
+                "imageUrl1": "",
+                "services": ["", "", ""]
+            }
+        ]
+      }
+      
+      
+    ]
+  }
