@@ -2,18 +2,12 @@
     "businesses": [
       {
         "name": "America First Credit Union",
-        "address": "Smith",
-        "phoneNumber": "23 December 1805",
-        "webUrl": "27 June 1844",
-        "membershipLevel": "Bronze",
-        "imageIconUrl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
-        
-        "description": [
-            {
-                "descriptionText": "Lorem20",
-                "services": ["", "", ""]
-            }
-        ]
+        "address": "7451 S. Campus View Drive, West Jordan, UT 84084",
+        "phoneNumber": "(801)215-3223",
+        "webUrl": "https://www.americafirst.com/",
+        "membershipLevel": "Gold",
+        "imageIconUrl": "",
+        "description": "Come and put your money in our vaults. We are cool."
       },
       {
         "name": "Choice Humanitarian",
@@ -22,14 +16,70 @@
         "webUrl": "https://choicehumanitarian.org/",
         "membershipLevel": "NP",
         "imageIconUrl": "./images/choice_humanitarian_256px.png",
-        "description": [
-            {
-                "descriptionText": "Lorem20",
-                "imageUrl": "",
-                "imageUrl1": "",
-                "services": ["", "", ""]
-            }
-        ]
+        "description": "We are a company that does humanitarian stuff. Come volunteer or donate to help other people."
+      },
+      {
+        "name": "Dave's Auto Body Shop",
+        "address": "1555 West 7800 South, West Jordan, UT 84088",
+        "phoneNumber": "(801)566-3906",
+        "webUrl": "https://www.davesbodyshop.com/",
+        "membershipLevel": "Bronze",
+        "imageIconUrl": "",
+        "description": "Home of the Invisible Repair. Since 1942, we have been here to make your repairs hassle-free."
+      },
+      {
+        "name": "Chick-fil-A",
+        "address": "7676 South Campus View Dr., West Jordan, UT 84084",
+        "phoneNumber": "(801)280-2103",
+        "webUrl": "https://www.chick-fil-a.com/",
+        "membershipLevel": "Silver",
+        "imageIconUrl": "",
+        "description": "Chicken is good and we make good chicken."
+      },
+      {
+        "name": "Panda Express",
+        "address": "5503 W 7800 S, West Jordan, UT 84081",
+        "phoneNumber": "(385)799-2808",
+        "webUrl": "https://www.pandaexpress.com/",
+        "membershipLevel": "Bronze",
+        "imageIconUrl": "",
+        "description": "Our orange chicken isn't really orange, but it is delicious."
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "webUrl": "",
+        "membershipLevel": "",
+        "imageIconUrl": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "webUrl": "",
+        "membershipLevel": "",
+        "imageIconUrl": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "webUrl": "",
+        "membershipLevel": "",
+        "imageIconUrl": "",
+        "description": ""
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "webUrl": "",
+        "membershipLevel": "",
+        "imageIconUrl": "",
+        "description": ""
       }
       
       
