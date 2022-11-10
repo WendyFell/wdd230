@@ -27,31 +27,6 @@ if (lastVisit !== null) {
 // Set the amount in local storage
 localStorage.setItem("time-ls", now);//the variable now will be the lastVisit Date object for the next time the user visits
 
-// // Getting the time since last visit
-// const lastVisitDisplay = document.querySelector("#lastVisitDisplay");
-
-// // get the stored value of the last visit in local storage
-// let lastVisit = localStorage.getItem("time-ls");
-
-// // Check if last item is stored, if it is null, it will be the first visit.
-
-// if (lastVisit !== null) {
-    
-//     lastVisitDisplay.innerHTML = `Time since last visit: ${lastVisit} minutes`;  
-    
-//     console.log(lastVisitDisplay)
-//  } else {
-//    lastVisitDisplay.innerHTML =  "This is your first visit!";
-//  };
-
-// // Math to get the time from the last visit until now.
-// const now1 = new Date()
-// lastVisit = now1 - lastVisit;
-// lastVisit = lastVisit / 60000;
-
-// // Set the amount in local storage
-// localStorage.setItem("time-ls", lastVisit);
-
 
 // Getting the current year
 const date1 = document.querySelector("#year");

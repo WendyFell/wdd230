@@ -276,6 +276,8 @@ h2 {
     display: none;
 }
 
+/* join.html */
+
 .join-box {
     display: none;
 }
@@ -298,6 +300,7 @@ h2 {
     object-position: center;   
 }
 
+/* contsct.html */
 form {
     padding: .5rem 2%;
     min-height: 20rem;
@@ -374,5 +377,6 @@ form input.radio {
 }
 input.radio:checked {
     border: 12px solid #C76035;
-  }
+}
   
+

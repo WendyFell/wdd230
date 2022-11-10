@@ -41,45 +41,45 @@
         "address": "5503 W 7800 S, West Jordan, UT 84081",
         "phoneNumber": "(385)799-2808",
         "webUrl": "https://www.pandaexpress.com/",
-        "membershipLevel": "Bronze",
+        "membershipLevel": "Gold",
         "imageIconUrl": "",
         "description": "Our orange chicken isn't really orange, but it is delicious."
       },
       {
-        "name": "",
-        "address": "",
-        "phoneNumber": "",
-        "webUrl": "",
-        "membershipLevel": "",
+        "name": "Kwik Kopy Business Solutions",
+        "address": "4256 W 8370 S, West Jordan, UT 84088",
+        "phoneNumber": "(801)280-2180",
+        "webUrl": "https://www.mykkp.com/",
+        "membershipLevel": "Bronze",
         "imageIconUrl": "",
-        "description": ""
+        "description": "We have the solutions for your business needs."
       },
       {
-        "name": "",
-        "address": "",
-        "phoneNumber": "",
-        "webUrl": "",
-        "membershipLevel": "",
+        "name": "Planet Ink",
+        "address": "1654 W 9000 S, West Jordan, UT 84084",
+        "phoneNumber": "(801)561-4465",
+        "webUrl": "http://www.myplanetink.com/",
+        "membershipLevel": "Silver",
         "imageIconUrl": "",
-        "description": ""
+        "description": "For all your inking needs."
       },
       {
-        "name": "",
-        "address": "",
-        "phoneNumber": "",
-        "webUrl": "",
-        "membershipLevel": "",
+        "name": "Smith's",
+        "address": "5710 W 7800 S, West Jordan, UT 84081",
+        "phoneNumber": "(801)545-3470",
+        "webUrl": "https://www.smithsfoodanddrug.com/",
+        "membershipLevel": "Gold",
         "imageIconUrl": "",
-        "description": ""
+        "description": "We got lots of food. Fresh and not fresh, your choice."
       },
       {
-        "name": "",
-        "address": "",
-        "phoneNumber": "",
-        "webUrl": "",
-        "membershipLevel": "",
+        "name": "SME Industries, Inc.",
+        "address": "5801 Wells Park Rd, West Jordan, UT 84081",
+        "phoneNumber": "(801)280-0711",
+        "webUrl": "https://smesteel.com/",
+        "membershipLevel": "Silver",
         "imageIconUrl": "",
-        "description": ""
+        "description": "Providing all the steel you could ever want."
       }
       
       
