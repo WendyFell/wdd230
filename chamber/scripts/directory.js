@@ -28,26 +28,29 @@ fetch(requestURL)
 
 	function displayBusinesses(business) {
 		let card = document.createElement("section");
-		let h2 = document.createElement("h2");
+		let h3 = document.createElement("h3");
 		let p1 = document.createElement("p");
 		let p2 = document.createElement("p");
-		let web = document.createElement("link")
+		let link = document.createElement("a")
 		let icon = document.createElement("img");
+
+		
+		
 			   
-		h2.textContent = `${business.name}`;
-		p1.textContent = `Date of Birth: ${business.address}`;
-		p2.textContent = `Place of Birth; ${business.phoneNumber}`;
-		web.innerHTML = business.webUrl
-		icon.innerHTML = `${business.imageIconUrl}`
+		h3.textContent = business.name;
+		p1.textContent = business.address;
+		p2.textContent = business.phoneNumber;
+		link.href = business.webUrl;
+		icon.innerHTML = business.imageIconUrl;
 	
 		// portrait.setAttribute("src", prophet.imageurl);    
 		// portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophetOrdinal} Latter-day Prophet`);
 		// portrait.setAttribute("loading", "lazy");
 		  
-		card.appendChild(h2);
+		card.appendChild(h3);
 		card.appendChild(p1);
 		card.appendChild(p2);
-		card.appendChild(web);
+		card.appendChild(link);
 		card.appendChild(icon);
 	
 		document.querySelector("div.cards").appendChild(card);
