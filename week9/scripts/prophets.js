@@ -40,8 +40,7 @@ function displayProphets(prophet) {
     h2.textContent = `${prophet.name} ${prophet.lastname}`;
     bDay.textContent = `Date of Birth: ${prophet.birthdate}`;
     bPlace.textContent = `Place of Birth; ${prophet.birthplace}`;
-    portrait.innerHTML = `${prophet.imageurl}`
-
+    
     portrait.setAttribute("src", prophet.imageurl);    
     portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophetOrdinal} Latter-day Prophet`);
     portrait.setAttribute("loading", "lazy");

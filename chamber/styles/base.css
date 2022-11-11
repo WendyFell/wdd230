@@ -81,7 +81,7 @@ nav ul li a:hover {
 nav ul {display: none;}
 nav ul.open {display: block;}
 
-.navLink[aria-current="page"] {
+nav ul li a.navLink[aria-current="page"] {
     background-color: #EC8D71;
     color: #614F5D;
 }
@@ -300,7 +300,7 @@ h2 {
     object-position: center;   
 }
 
-/* contsct.html */
+/* contact.html */
 form {
     padding: .5rem 2%;
     min-height: 20rem;
@@ -379,4 +379,95 @@ input.radio:checked {
     border: 12px solid #C76035;
 }
   
+/* directory.html */
 
+.dirMain {
+	margin: 0 auto;
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: #eee;
+	font-family: 'Merriweather', serif;
+}
+
+.dirMenu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #45C3B7;
+	text-align: center;
+}
+
+.dirMenu button {
+	padding: 1rem;
+}
+
+article,
+section {
+	margin: 0.75rem;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #ccc;
+}
+
+.dirGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.dirList {
+	display: flex;
+	flex-direction: column;
+}
+
+/* .dirList section {
+	display: flex;
+	align-items: center;
+} */
+
+.dirGrid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.dirGrid section > * {
+	margin: 0.1rem;
+}
+
+.dirList section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.dirList section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+
+.dirList section img {
+	display: none; /* smaller viewports only */
+}
+
+section h3 {
+	font-size: 1.1rem;
+    padding: 5px;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+/* img {
+	height: 75px;
+	max-width: 100%; 
+} */
+
+/* @media (min-width: 700px) {
+	.list section img {
+		display: block;
+	}
+} */

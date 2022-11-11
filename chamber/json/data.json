@@ -6,7 +6,7 @@
         "phoneNumber": "(801)215-3223",
         "webUrl": "https://www.americafirst.com/",
         "membershipLevel": "Gold",
-        "imageIconUrl": "",
+        "imageIconUrl": "./images/book.png",
         "description": "Come and put your money in our vaults. We are cool."
       },
       {
@@ -15,7 +15,7 @@
         "phoneNumber": "801-474-1937",
         "webUrl": "https://choicehumanitarian.org/",
         "membershipLevel": "NP",
-        "imageIconUrl": "./images/choice_humanitarian_256px.png",
+        "imageIconUrl": "images/choice_humanitarian_256px.png",
         "description": "We are a company that does humanitarian stuff. Come volunteer or donate to help other people."
       },
       {
