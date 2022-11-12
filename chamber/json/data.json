@@ -6,7 +6,7 @@
         "phoneNumber": "(801)215-3223",
         "webUrl": "https://www.americafirst.com/",
         "membershipLevel": "Gold",
-        "imageIconUrl": "./images/book.png",
+        "imageIconUrl": "./images/bank.png",
         "description": "Come and put your money in our vaults. We are cool."
       },
       {
@@ -15,7 +15,7 @@
         "phoneNumber": "801-474-1937",
         "webUrl": "https://choicehumanitarian.org/",
         "membershipLevel": "NP",
-        "imageIconUrl": "images/choice_humanitarian_256px.png",
+        "imageIconUrl": "images/hands.png",
         "description": "We are a company that does humanitarian stuff. Come volunteer or donate to help other people."
       },
       {
@@ -24,7 +24,7 @@
         "phoneNumber": "(801)566-3906",
         "webUrl": "https://www.davesbodyshop.com/",
         "membershipLevel": "Bronze",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/car.png",
         "description": "Home of the Invisible Repair. Since 1942, we have been here to make your repairs hassle-free."
       },
       {
@@ -33,7 +33,7 @@
         "phoneNumber": "(801)280-2103",
         "webUrl": "https://www.chick-fil-a.com/",
         "membershipLevel": "Silver",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/chicken.png",
         "description": "Chicken is good and we make good chicken."
       },
       {
@@ -42,7 +42,7 @@
         "phoneNumber": "(385)799-2808",
         "webUrl": "https://www.pandaexpress.com/",
         "membershipLevel": "Gold",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/panda.png",
         "description": "Our orange chicken isn't really orange, but it is delicious."
       },
       {
@@ -51,7 +51,7 @@
         "phoneNumber": "(801)280-2180",
         "webUrl": "https://www.mykkp.com/",
         "membershipLevel": "Bronze",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/printer.jpeg",
         "description": "We have the solutions for your business needs."
       },
       {
@@ -60,7 +60,7 @@
         "phoneNumber": "(801)561-4465",
         "webUrl": "http://www.myplanetink.com/",
         "membershipLevel": "Silver",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/book.png",
         "description": "For all your inking needs."
       },
       {
@@ -69,7 +69,7 @@
         "phoneNumber": "(801)545-3470",
         "webUrl": "https://www.smithsfoodanddrug.com/",
         "membershipLevel": "Gold",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/food-stand.png",
         "description": "We got lots of food. Fresh and not fresh, your choice."
       },
       {
@@ -78,7 +78,7 @@
         "phoneNumber": "(801)280-0711",
         "webUrl": "https://smesteel.com/",
         "membershipLevel": "Silver",
-        "imageIconUrl": "",
+        "imageIconUrl": "images/steel.png",
         "description": "Providing all the steel you could ever want."
       }
       

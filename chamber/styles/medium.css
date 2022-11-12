@@ -74,5 +74,15 @@
         opacity: 1;
     }
     
+    .dirMain {        
+        max-width: 900px;
+    }
+    .dirList section {
+        display: flex;
+        align-items: center;
+        
+    }  
+    
+   
     
 }

@@ -38,9 +38,9 @@ fetch(requestURL)
 		h3.textContent = business.name;
 		p1.textContent = business.address;
 		p2.textContent = business.phoneNumber;
-		link.href = business.webUrl;
+		link.textContent = business.webUrl;
 		
-
+		link.setAttribute("href", business.webUrl)
 		icon.setAttribute("src", business.imageIconUrl)
 		// portrait.setAttribute("src", prophet.imageurl);    
 		// portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophetOrdinal} Latter-day Prophet`);
