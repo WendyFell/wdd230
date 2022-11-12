@@ -1,7 +1,7 @@
 // Getting a full date
 const datefield = document.querySelector("#date"); // Select the element to manipulate
 
-const now = new Date(); // derive the current date using a date object
+const now = Date().now; // derive the current date using a date object
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
 datefield.innerHTML = fulldate;
@@ -19,7 +19,6 @@ if (lastVisit !== null) {
     let duration = Math.ceil((now - lastVisit) / 86400000);//Math.ceil will round up to the next integer so that we can display a whole number
     lastVisitDisplay.textContent = `Time since last visit: ${duration} minutes`;
 
-    console.log(lastVisitDisplay);
 } else {
     lastVisitDisplay.textContent = "Welcome! This is your first visit.";
 };
