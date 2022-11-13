@@ -1,7 +1,7 @@
 // Getting a full date
 const datefield = document.querySelector("#date"); // Select the element to manipulate
 
-const now = Date().now; // derive the current date using a date object
+const now = Date.now(); // derive the current date using a date object
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
 datefield.innerHTML = fulldate;
