@@ -10,15 +10,41 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             console.log(data); // Testing the call
-            //displayResults(data);
+            displayResults(data);
         } else {
-            console.log("Response not OK ${await response.text()}");
+            console.log(`Response not OK ${await response.text()}`);
             throw Error (await response.text());
         }
     } catch (error){
         console.log(error.message);
     }
 }
-
+// call the async function
 apiFetch();
-console.log(data);
+
+// Capitalize
+// Method from Brother Blazzard. Only returns the first word with capitalization
+// function capitalize(string) {
+//     return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
+// }
+
+function capitalize(string) {
+    let words = string.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+    return words.join(" ");
+}
+
+
+// display the results
+function displayResults(data) {
+    currentTemp.innerHTML = `<strong>${data.main.temp.toFixed(0)}</strong>`;
+    const desc = capitalize(data.weather[0].description);
+
+    weatherIcon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    weatherIcon.alt = `Icon showing weather description currently, ${desc}`;
+
+    captionDesc.textContent = desc;
+}
+
