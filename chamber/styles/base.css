@@ -150,6 +150,18 @@ nav ul li a.navLink[aria-current="page"] {
 	height: auto;
 }
 
+.contact a {
+    background-color: #B6F3EB;
+    color: #343334;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    background-color: #BA381E;
+    color: #B6F3EB;
+}
 /* main section */
 main {
     margin: 15px;
@@ -211,7 +223,7 @@ h2 {
 	grid-template-columns: 1fr 1fr;   
     margin: 0 auto; 
     font-family: poppins;
-
+    color: #343334 ;
 }
 .w-title {
     grid-column: 1/3;
