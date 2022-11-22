@@ -42,16 +42,13 @@ fetch(requestURL)
 		
 		link.setAttribute("href", business.webUrl)
 		icon.setAttribute("src", business.imageIconUrl)
-		// portrait.setAttribute("src", prophet.imageurl);    
-		// portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophetOrdinal} Latter-day Prophet`);
-		// portrait.setAttribute("loading", "lazy");
-		
+		icon.setAttribute("alt", `${business.name}'s icon`)
+				
 		card.appendChild(icon);
 		card.appendChild(h3);
 		card.appendChild(p1);
 		card.appendChild(p2);
 		card.appendChild(link);
-		
-	
+			
 		document.querySelector("article.cards").appendChild(card);
 	};

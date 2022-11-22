@@ -13,7 +13,7 @@ header, footer {
     text-align: center;
     padding: 10px;
 }
-p, figcaption {
+p {
     font-family: Poppins, serif;
     color: #343334;
 }
