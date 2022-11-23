@@ -73,8 +73,27 @@
         </div>    
     </header>
 
-    <main class="main">
-        <h2>Coming Soon</h2>
+    <main >
+        <div>
+            <form method="get" action="thankyou.html" target="_blank" id="form" class="main-form">  
+                <fieldset>
+                    <legend>General Inquiries</legend>            
+                        <label class="field1">First Name* <input type="text" name="fname" required></label>
+                        <label class="field1">Last Name* <input type="text" name="lname" required></label>
+                        <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com" id="email"></label>
+                        <label class="field1">Cell Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234" id="phone"></label>
+                        <label class="field1">Business Name* <input type="text" name="busName" required></label>                                  
+                        <div class="field3">Are you a chamber member?</div>         
+                        <label class="field3"><input type="radio" name="member" value="yes" class="radio1"> Yes</label>
+                        <label class="field3"><input type="radio" name="member" value="no" class="radio1"> No</label>
+                        <label class="field3"><input type="radio" name="member" value="notSure" class="radio1" checked> Not Sure</label>                                 
+                        <label class="field1">What questions do you have for the West Jordan Chamber of Commerce* <textarea type="text" name="genInquiries" rows="4" cols="50"></textarea></label>
+                        <input type="submit" class="submitBtn" value = "Send Message">
+                </fieldset>          
+            </form>
+        </div>
+      
+
     </main>
     
     <footer>
@@ -98,6 +117,5 @@
         
     </footer> 
     <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/windchill.js"></script>
 </body>
 </html>
