@@ -15,25 +15,32 @@ listbutton.addEventListener("click", () => {
 const requestURL = "https://wendyfell.github.io/wdd230/chamber/json/data.json";
 const cards = document.querySelector(".cards");
 
-fetch(requestURL)
-    .then ((response) => {
-        return response.json();        
-    })
-    .then ((jsonObject) => {
-        const businesses = jsonObject["businesses"];
-        businesses.forEach(displayBusinesses);
-    });
+async function getData() {
+	try {
+		const request = new Request(requestURL);
+		const response = await fetch(request);
+		console.log(response.ok);
+		const jsonObject = await response.json();
+		const allBusinesses = jsonObject["businesses"];
+		allBusinesses.forEach((business) => {
+			displayBusinesses(business);
+		});
+		return jsonObject;
+	} catch(err){
+		console.log(err)
+	}
+};
+getData().then((jsonObject) => console.log(jsonObject));
 
 
-function displayBusinesses(business, index) {
+function displayBusinesses(business) {
 	let icon = document.createElement("img");
 	let card = document.createElement("section");
 	let h3 = document.createElement("h3");
 	let p1 = document.createElement("p");
 	let p2 = document.createElement("p");
 	let link = document.createElement("a")
-	
-			
+				
 	h3.textContent = business.name;
 	p1.textContent = business.address;
 	p2.textContent = business.phoneNumber;
@@ -51,32 +58,4 @@ function displayBusinesses(business, index) {
 		
 	document.querySelector("article.cards").appendChild(card);
 };
-
-// async function getData() {
-// 	try {
-// 		const request = new Request(requestURL);
-// 		const response = await fetch(request);
-// 		console.log(response.ok);
-// 		const jsonObject = await response.json();
-// 		const allBusinesses = jsonObject["businesses"];
-// 		console.log(allBusinesses);
-// 		const levels = allBusinesses.filter((business) =>
-// 			business.membershipLevel === 'Silver' || business.membershipLevel === 'Gold'
-// 		);
-		// console.log(levels);
-		// const index = Math.floor(Math.random());
-		// levels.splice(index - 1, 1);
-// 		levels.forEach((business, index) => {
-// 			displayBusinesses(business, index);
-// 		});
-// 		console.log(index);
-		
-// 		return jsonObject;
-// 	} catch(err){
-// 		console.log(err)
-// 	}
-// };
-// getData().then((jsonObject) => console.log(jsonObject));
-
-
 
