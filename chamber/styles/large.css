@@ -70,24 +70,27 @@
     }
 
     .spotlight {
-        display: block;
         grid-column: 4 / 5;
         grid-row: 1 / 4;
         row-gap: 10px;
     }
     
-    .spot-flex {
+    .spot {
+        gap: 10px;
         display: flex;
         flex-direction: column;
     }
-    .spot {
-        gap: 10px;
+    
+    #cards section:nth-child(3) {
+        display: block;
     }
+
 
     .join-box {
         display: grid;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+        
     }
    
     .joinBtn {

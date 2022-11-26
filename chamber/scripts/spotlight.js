@@ -5,50 +5,40 @@ async function getData() {
 	try {
 		const request = new Request(requestURL);
 		const response = await fetch(request);
-		console.log(response.ok);
 		const jsonObject = await response.json();
 		const allBusinesses = jsonObject["businesses"];
-		console.log(allBusinesses);
 		const levels = allBusinesses.filter((business) =>
 			business.membershipLevel === 'Silver' || business.membershipLevel === 'Gold'
-		);
-		console.log(levels);
-		const index = Math.floor(Math.random() * (3 - 1) + 1);
-        console.log(index);
-		levels.splice(index - 1, 1);
-        console.log(levels.splice);
-		levels.forEach((business, index) => {
-			displayBusinesses(business, index);
-		});
+		); // Filters just silver and gold levels
 		
+		for (let i = 0; i < 3; i++) { // Want to select 3 businesses
+			let rand = Math.floor(Math.random() * levels.length); // pick a random business from the array
+			
+			let icon = document.createElement("img"); // Display the getData function
+				let card = document.createElement("section");
+				let h3 = document.createElement("h3");
+				let link = document.createElement("a");
+			
+				h3.textContent = levels[rand].name;
+				link.textContent = levels[rand].webUrl;
+			
+				link.setAttribute("href", levels[rand].webUrl);
+				icon.setAttribute("src", levels[rand].imageIconUrl);
+				icon.setAttribute("alt", `${levels[rand].name}'s icon`);
+			
+				card.appendChild(icon);
+				card.appendChild(h3);
+				card.appendChild(link);
+			
+				document.querySelector("#cards").appendChild(card);
 		
-		return jsonObject;
+				levels.splice(rand,1); // Deletes the business just displayed, next time levels.length will be one shorter
+				
+			}
 	} catch(err){
 		console.log(err)
 	}
-};
-getData().then((jsonObject) => console.log(jsonObject));
-
-function displayBusinesses(business, index) {
-	let icon = document.createElement("img");
-	let card = document.createElement("section");
-	let h3 = document.createElement("h3");
-	let link = document.createElement("a")
 	
-			
-	h3.textContent = business.name;	
-	link.textContent = business.webUrl;
-	
-	link.setAttribute("href", business.webUrl)
-	icon.setAttribute("src", business.imageIconUrl)
-	icon.setAttribute("alt", `${business.name}'s icon`)
-			
-	card.appendChild(icon);
-	card.appendChild(h3);
-	card.appendChild(link);
-		
-	document.querySelector("#cards").appendChild(card);
 };
-
-
+getData().then((jsonObject) => console.log(jsonObject)); // Run the function
 
