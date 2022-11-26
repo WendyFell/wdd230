@@ -149,10 +149,13 @@ nav ul li a.navLink[aria-current="page"] {
 	height: auto;
 }
 
+.contact div {
+    padding: 2px;
+}
 .contact a {
     background-color: #B6F3EB;
     color: #343334;
-    padding: 3px;
+    padding: 2px;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -206,6 +209,7 @@ main {
     padding: 5px;  
     border: 1px solid #2F8A81;  
     border-radius: 5px;
+    text-align: center;
 }
 
 h2 {
@@ -298,6 +302,12 @@ h2 {
     text-align: center;
 }
 
+.spotStyle a {
+   color: #343334; 
+
+
+}
+
 /* join.html */
 .join-box {
     display: none;
@@ -386,6 +396,11 @@ form label.field1 textarea {
     border: #343334;
     font-family: Poppins, serif;
     border-radius: 1rem;
+    font-size: 1.3rem;
+}
+
+::placeholder {
+    font-size: .9rem;
 }
 
 form label.field2 {
@@ -536,4 +551,13 @@ section a {
     color: #343334;
 }
 
+.attribution a {
+    text-decoration: none;
+    color: #343334;
+}
+
+.attribution:hover a {    
+    color: #B6F3EB;
+    background-color: #BA381E;
+}
 

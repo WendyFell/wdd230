@@ -18,10 +18,8 @@
 <body>
     <header>
         <div class="header">
-            <div class="logo header-item">
-                <picture>
-                    <img src="images/tree-logo1.webp" alt="Tree logo">
-                </picture>
+            <div class="logo header-item">           
+                <a href="index.html"><img src="images/tree-logo1.webp" alt="Tree logo"></a>               
                 <div class="logo-heading">
                     <h1>West Jordan</h1>
                     <div>Chamber of Commerce</div>
@@ -80,7 +78,7 @@
                 <source media="(max-width: 500px)" srcset="images/town-600-300.jpg">
                 <img src="images/town-900-450.jpg" alt="small town">
             </picture>
-            <a href="join.html"><button class="join">Join the Chamber</button></a>
+            <button onclick="window.location.href='join.html';" class="join">Join the Chamber</button>
             
         </div>
         <div class="boxes event">
@@ -101,7 +99,7 @@
                 <span id="current-temp"></span><span id="degree"></span>
             </div>
             <div class="w-speed">
-                <span>Wind Speed</span>: <span id="windSpeed"></span><span id="km"></span>
+                <span>Wind Speed</span>: <span id="windSpeed"></span><span id="mph"></span>
             </div>
             <div class="w-chill">
                 <span>Wind Chill</span>: <span id="windChill"></span>
@@ -117,7 +115,7 @@
             <article>
                 <h2>Become a Member Today</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <a href="join.html"><button class="join2">Join the Chamber</button></a>
+                <button onclick="window.location.href='join.html';" class="join2">Join the Chamber</button>
             </article>
         </div>
         <div class="boxes spotlight">
@@ -128,9 +126,7 @@
     <footer>
         <div class="footer">
             <div class="logo-foot">
-                <picture>
-                    <img src="images/tree-logo1.webp" alt="Tree logo" >
-                </picture>
+                <a href="index.html"><img src="images/tree-logo1.webp" alt="Tree logo" ></a>
                 <div class="logo-heading-foot">
                     <div>West Jordan Chamber of Commerce</div>
                     <div>5600 W 7800 S West Jordan, UT 84088</div>
@@ -139,7 +135,7 @@
             <div class="contact">
                 <div>Contact Info</div>
                 <div>Phone number</div>
-                <div>Icon + Location Map</div>
+                <div><a href="https://www.google.com/maps/place/8000+S+Redwood+Rd,+West+Jordan,+UT+84088/@40.6061194,-111.9439717,17z/data=!3m1!4b1!4m5!3m4!1s0x875288d8300d0f21:0xf1ea8355dfd43d8c!8m2!3d40.6061154!4d-111.939487" target="_blank"><img src="images/map-pin.png" alt="map pin icon"> Location Map</a></div>
                 <div><a href="attributions.html">Attributions</a></div>
             </div> 
         </div>           

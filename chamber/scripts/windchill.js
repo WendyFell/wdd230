@@ -64,5 +64,5 @@ function displayResults(data) {
 };
 
 document.getElementById("degree").innerHTML = "°F";
-document.getElementById("km").innerHTML = "km/h";
+document.getElementById("mph").innerHTML = "mph";
 

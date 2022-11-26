@@ -32,7 +32,6 @@ async function getData() {
 };
 getData().then((jsonObject) => console.log(jsonObject));
 
-
 function displayBusinesses(business) {
 	let icon = document.createElement("img");
 	let card = document.createElement("section");

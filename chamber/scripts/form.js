@@ -21,17 +21,6 @@
 //   testInfo(input1);
 // });
 
-const nameInput = document.querySelector("input");
+const subTime = document.querySelector("#submissionTime");
 
-nameInput.addEventListener("input", () => {
-  nameInput.setCustomValidity('');
-  nameInput.checkValidity();
-});
-
-nameInput.addEventListener('invalid', () => {
-  if (nameInput.value === '') {
-    nameInput.setCustomValidity('Enter your username!');
-  } else {
-    nameInput.setCustomValidity('Usernames can only contain upper and lowercase letters. Try again!');
-  }
-});
+subTime.value = new Date();
