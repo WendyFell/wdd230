@@ -345,6 +345,11 @@ h2 {
 }
 
 /* join and contact.html */
+
+.join-page {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
 .main-form {
     display: flex;
     flex-direction: column;
@@ -356,7 +361,7 @@ form {
     min-height: 20rem;
     background-color: #FFEAC2;
     margin: 1rem auto ;
-    max-width: 1000px;
+    max-width: 500px;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -409,6 +414,11 @@ form label.field2 {
     font-family: Poppins, serif;
     font-size: 1.2rem;
     color: #343334;
+}
+.field2 p {
+    margin: 1px;
+    padding: 0;
+   
 }
 
 form label.field3 {
@@ -466,6 +476,12 @@ input.radio:checked,
 input.radio1:checked {
     border: 12px solid #C76035;
 } 
+/* Join */
+.membership-levels {
+    display: none;
+}
+
+
 
 /* directory.html */
 
@@ -559,5 +575,128 @@ section a {
 .attribution:hover a {    
     color: #B6F3EB;
     background-color: #BA381E;
+}
+
+/* Calendar */
+.event-calendar {
+  width:400px;
+  margin: 20px;
+  min-width:300px;
+  background-color: #FFBC95;
+}
+
+.event-calendar a {
+  text-decoration:none;
+  color: #343334;
+}
+
+.event-calendar a:hover {
+  opacity: 0.7;
+  color: #BA381E;
+}
+
+.event-calendar a:hover .title-event {
+  transform:translate(2%,0); 
+}
+
+.event-calendar ul,
+.event-calendar ul li,
+.event-calendar h1,
+.event-calendar h2
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.event-calendar .events-body ul li {
+  position:relative;
+   border-bottom:1px solid #614F5D;
+}
+.event-calendar .events-body ul li:last-child {
+  border:0;
+}
+
+.event-calendar .heading-title {
+  padding:10px 20px;
+  text-transform:uppercase;
+  border-bottom:4px solid #614F5D;
+  font-size:.9em;
+  position:relative;
+  font-family: 'Merriweather', serif;
+}
+
+.event-calendar .icon-box {
+  position:absolute;
+  right:20px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:30px;
+  font-size:1.8em;
+}
+
+.event-calendar .event-left-content {
+  padding:15px 20px;
+}
+.event-calendar .event-left-content .title-event,
+.event-calendar .event-left-content .title-event h2,
+.event-calendar .event-left-content .event-date,
+.event-calendar .event-left-content .event-location
+{
+  font-family: Poppins, sans-serif;
+}
+
+.event-calendar .event-left-content .title-event {
+  width:80%;
+}
+
+.event-calendar .event-left-content .title-event h2 {
+  text-transform:uppercase;
+  margin:0;
+  padding:0;
+}
+
+.event-calendar .event-left-content .event-date {
+  font-size: 1rem;
+}
+
+.event-calendar .event-left-content .event-location {
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size: 1rem;
+}
+
+.event-calendar .event-icon{
+  position:absolute;
+  width:auto;
+  height:50px;
+  display:block;
+  background-color: #7F626B;
+  right:20px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  text-align:center;
+  color: #E2FBF7;
+  border-radius: 5px;
+  padding:2px 10px;    
+}
+
+.event-calendar .event-icon .month,
+.event-calendar .event-icon .date {
+  display:block;
+}
+
+.event-calendar .event-icon .month {
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size: 1.1em;
+  margin-top: 5px
+}
+
+.event-calendar .event-icon .date {
+  font-size:1.1em;
+  font-weight:bold;
 }
 

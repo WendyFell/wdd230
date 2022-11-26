@@ -87,7 +87,49 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     }
+    .join-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    table {
+        margin: 10px;    
+        border-collapse: collapse;
+        font-family: 'Poppins', sans-serif;
+        background-color: #BC958E;
+    }
+
     
    
+    
+    tr:first-child th, .highlight {
+        background-color: #45C3B7;
+        /* color: #614F5D; */
+    }
+    
+    th, td {
+        padding: 7px 15px;
+        border: 1px solid #614F5D;
+    }
+    
+    th {
+        background-color: #EC8D71;
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #B6F3EB;
+    }
+    .membership-levels {
+       margin-top: 10px;
+        display: block;
+    }
+
+      
+      
+    
     
 }

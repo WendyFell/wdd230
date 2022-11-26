@@ -71,116 +71,8 @@
         </div>    
     </header>
 
-    <main class="main">
-        <div class="hero">
-            <picture>
-                <source media="(max-width: 300px)" srcset="images/town-300-150.jpg">
-                <source media="(max-width: 500px)" srcset="images/town-600-300.jpg">
-                <img src="images/town-900-450.jpg" alt="small town">
-            </picture>
-            <button onclick="window.location.href='join.html';" class="join">Join the Chamber</button>
-            
-        </div>
-        <div class="boxes">
-            <article>               
-                <div class="event-calendar">
-                    <div class="heading-title">
-                      <h1> upcoming events </h1>
-                      <div class="icon-box">
-                         <i class="fas fa-calendar-alt"></i>
-                      </div>
-                    </div>
-                    <div class="events-body">
-                      <ul>
-                         <li>
-                           <a href="">
-                          <div class="event-left-content">
-                            <div class="title-event">
-                               <h2>Chick-fil-A Opening</h2>
-                              <div class="event-date">Dec 1, 2022</div>
-                              <div class="event-location">7676 South Campus View Drive</div>
-                            </div>
-                          </div>
-                          <div class="event-icon"> 
-                            <div class="month">Dec</div> 
-                            <div class="date">01</div> 
-                          </div>
-                           </a>
-                        </li>                           
-                        <li>
-                           <a href="">
-                          <div class="event-left-content">
-                            <div class="title-event">
-                               <h2>Primary Children's Hospital Fundraiser</h2>
-                              <div class="event-date">Dec 5, 2022</div>
-                              <div class="event-location">West Jordan City Hall</div>
-                            </div>
-                          </div>
-                          <div class="event-icon"> 
-                            <div class="month">Dec </div> 
-                            <div class="date">05 </div> 
-                          </div>
-                           </a>
-                        </li>
-                        
-                         <li>
-                           <a href="">
-                          <div class="event-left-content">
-                            <div class="title-event">
-                               <h2>Winter Carnival</h2>
-                              <div class="event-date">Dec 30, 2022</div>
-                              <div class="event-location">Fun Events Center</div>
-                            </div>
-                          </div>
-                          <div class="event-icon"> 
-                            <div class="month">Dec</div> 
-                            <div class="date">30 </div> 
-                          </div>
-                           </a>
-                        </li>
-                            
-                            
-                      </ul>
-                    </div>
-                    
-                  </div>
-            </article>
-        </div>
-        <div class="boxes weather">
-            <h2 class="w-title">Weather</h2>
-            <picture class="w-icon">             
-                <img id="weather-icon" src="#" alt="weather description">      
-            </picture>
-            <div class="w-desc">
-                <span id="desc"></span>
-            </div>
-            <div class="w-temp">
-                <span id="current-temp"></span><span id="degree"></span>
-            </div>
-            <div class="w-speed">
-                <span>Wind Speed</span>: <span id="windSpeed"></span><span id="mph"></span>
-            </div>
-            <div class="w-chill">
-                <span>Wind Chill</span>: <span id="windChill"></span>
-            </div>
-        </div>
-        <div class="boxes news">
-            <article>
-                <h2>News Release</h2>
-                <h3>Primary Children's Hospital Fundraiser</h3>
-                <p>Come join us for a dinner and a show. All proceeds will be donated to the Primary Children's hospital. All Gold members will recieve two tickets and available extra tickets on sale first.</p>
-            </article>
-        </div>
-        <div class="boxes join-box">            
-            <article>
-                <h2>Become a Member Today</h2>
-                <p>We have many things to offer businesses such as networking events, discounts on advertising, and posting events on the community calendar. See what levels fit your business.</p>
-                <button onclick="window.location.href='join.html';" class="join2">Join the Chamber</button>
-            </article>
-        </div>
-        <div class="boxes spotlight">
-           <article id="cards" class="spot"></article>
-        </div>
+    <main class="body">
+        <div id="calendar"></div>
     </main>
     
     <footer>
@@ -203,8 +95,7 @@
         
     </footer> 
     <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/windchill.js"></script>
-    <script defer src="scripts/spotlight.js"></script>
+    
     <script defer src="scripts/calendar.js"></script>
 </body>
 </html>

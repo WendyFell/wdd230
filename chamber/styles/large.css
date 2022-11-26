@@ -123,5 +123,21 @@
         width: 100%;
     }
 
+    .event-calendar {
+        width:100%;
+        margin:0;
+      }
+      .event-calendar .heading-title h1 {
+        font-size:1em;
+      }
+      
+      .event-calendar .title-event h2 {
+        font-size:.9em;
+      }
+      
+      .event-calendar .event-left-content .event-date,
+      .event-calendar .event-left-content .event-location {
+        font-size:.8em;
+      }
 }
 
