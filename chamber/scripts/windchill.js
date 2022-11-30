@@ -1,4 +1,3 @@
-// 
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#desc");
@@ -22,12 +21,6 @@ async function apiFetch() {
 }
 // call the async function
 apiFetch();
-
-// Capitalize
-// Method from Brother Blazzard. Only returns the first word with capitalization
-// function capitalize(string) {
-//     return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
-// }
 
 function capitalize(string) {
     let words = string.split(" ");

@@ -13,11 +13,10 @@ const lastVisitDisplay = document.querySelector("#lastVisitDisplay");
 let lastVisit = localStorage.getItem("time-ls");
 
 // Check if last item is stored, if it is null, it will be the first visit.
-
 if (lastVisit !== null) {
 
     let duration = Math.ceil((now - lastVisit) / 86400000);//Math.ceil will round up to the next integer so that we can display a whole number
-    lastVisitDisplay.textContent = `Time since last visit: ${duration} minutes`;
+    lastVisitDisplay.textContent = `Time since last visit: ${duration} days`;
 
 } else {
     lastVisitDisplay.textContent = "Welcome! This is your first visit.";
@@ -58,16 +57,9 @@ else {
     document.getElementById("meet").style.display = "none";
 }
 
-
-
-
 // active page has aria attribute
 document.querySelectorAll(".navLink").forEach(link => {
     if(link.href === window.location.href){
         link.setAttribute("aria-current", "page")
     }
 });
-
-
-
-
