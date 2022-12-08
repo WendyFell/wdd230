@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="This website hosts the final project for Wendy Fellows' work in class WDD230">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--normalize css, minimized using external source to reduce file size-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Figtree&family=Grand+Hotel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logoHeader">
+            <img src="images/Logo-120.png">
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fresh</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="rightHeader">
+
+        </div>
+    </header>
+    
+    <main>
+        <div id="myData"></div>
+        <form method="post" target="_self" id="form">
+           
+            <fieldset>
+                
+            
+                    <label class="">First Name* <input type="text" name="fname" required></label>
+                    <label class="">Last Name* <input type="text" name="lname" required></label>
+                    <label id="myData" ><input type="text" ></label>
+                    
+                    <label id="hidden"><input type="hidden" id="submissionTime" name="submissionTime"></label>
+                    
+            </fieldset>
+       
+    <script defer src="scripts/fresh.js"></script>
+    
+</body>
+</html>

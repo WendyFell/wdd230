@@ -1,0 +1,39 @@
+{
+    "cities": [
+        {
+            "name": "Los Angeles",
+            "info": "",
+            "img": "",
+        },
+        {
+            "name": "Costa Mesa",
+            "info": "",
+            "img": "",
+        },
+        {
+            "name": "Del Mar",
+            "info": "",
+            "img": "",
+        },
+        {
+            "name": "Carlsbad",
+            "info": "",
+            "img": "",
+        },
+        {
+            "name": "Encinitas",
+            "info": "",
+            "img": "",
+        },
+        {
+            "name": "Dana Point",
+            "info": "",
+            "img": "",
+        },
+        {
+            "name": "San Diego",
+            "info": "",
+            "img": "",
+        },
+    ]
+}

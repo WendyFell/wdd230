@@ -1,32 +1,78 @@
-// const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
-
-const section = document.querySelector('section');
-
-let para1 = document.createElement('p');
-let para2 = document.createElement('p');
-let motherInfo = 'The mother cats are called ';
-let kittenInfo;
-const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
-
-fetch(requestURL)
-  .then(response => response.text())
-  .then(text => displayCatInfo(text))
-
-function displayCatInfo(catString) {
-  let total = 0;
-  let male = 0;
-
-// Add your code here
+const fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+const myFruitList = json.parse(fruitURL);
+console.log(myFruitList);
+x = myFruitList.name;
+console.log(x);
 
 
-// Don't edit the code below here!
 
-  para1.textContent = motherInfo;
-  para2.textContent = kittenInfo;
-}
+// async function getFruits() {
+//   try {
+//     const response = await fetch(fruitURL);
+//     if (response.ok) {
+//       const data = await response.json();
+//       console.log(data);
+//       getFruitList(data);
+//     } else {
+//       console.log(`Response not OK ${await response.text()}`);
+//       throw Error (await response.text());
+//     }
+//   } catch (error) {
+//       console.log(error);
+//   }
+  
+// };
 
-section.appendChild(para1);
-section.appendChild(para2);
-    
-// superhero json async function  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
-// test skills from above link-code above from this link  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Test_your_skills:_JSON
+// getFruits();
+
+// function getFruitList(data) {
+//   console.log(data);
+//   results = data;
+ 
+
+// }
+
+// const url = "https://pokeapi.co/api/v2/pokemon/ditto";
+// const urlList = "https://pokeapi.co/api/v2/pokemon";
+// let results = null;
+
+// async function getPokemon(url, doThis) {
+//   const response = await fetch(url);
+//   //check to see if the fetch was successful
+//   if (response.ok) {
+//     // the API will send us JSON...but we have to convert the response before we can use it
+//     // .json() also returns a promise...so we await it as well.
+//     const data = await response.json();
+//     // execute the callback
+//     doThis(data);
+//   }
+// }
+
+// function doStuff(data) {
+//   results = data;
+//   const outputElement = document.querySelector("#output");
+//   const html = `<h2>${data.name}</h2><img src="${data.sprites.front_default}" alt="${data.name}">`;
+//   outputElement.innerHTML = html;
+//   console.log("first: ", results);
+// }
+
+// function doStuffList(data) {
+//   console.log(data);
+//   const pokeListElement = document.querySelector("#outputList");
+//   const pokeList = data.results;
+//   pokeList.forEach((currentItem) => {
+//     const html = `<li data-url="${item.url}">${currentItem.name}</li>`;
+//     // note the += here...
+//     pokeListElement.innerHTML += html;
+//   });
+// }
+// getPokemon(url, doStuff);
+// console.log("second: ", results);
+// // Notice that by just passing a different callback function in
+// // we can totally change what happens when the data comes back.
+// // It's like we gave the getPokemon function superpowers!
+// getPokemon(urlList, doStuffList);
+
+
+
+

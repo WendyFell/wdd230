@@ -1,1 +1,50 @@
-/* Phone views */
+/* Base views */
+:root {
+    --primary-color: hsl(84, 38%, 43%);
+    --secondary-color: hsl(85, 67%, 23%);
+    --accent1-color: hsl(193, 91%, 43%);
+    --accent2-color: hsl(196, 74%, 61%);
+    --accent3-color: hsl(47, 53%, 79%);
+    --accent4-color: hsl(36, 91%, 49%);
+
+    --ff-body: bitter, serif;
+    --ff-heading: figtree, sans-serif;
+
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit; /* resets font sizes */
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    background-color: var(--primary-color);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    
+}
+.top {
+    width: 50%;
+}
+
+.button {
+    background-color: var(--accent4-color);
+}
