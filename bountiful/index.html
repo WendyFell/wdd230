@@ -21,11 +21,9 @@
         </div>
         <nav class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Fresh</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
         <div class="rightHeader">
@@ -57,9 +55,23 @@
             </picture>
         </section>
         <section class="weather">
-            <div>
-
+            <h2 class="w-title">Weather</h2>
+            <picture class="w-icon">             
+                <img id="weather-icon" src="#" alt="weather description">      
+            </picture>
+            <div class="w-desc">
+                <span id="desc"></span>
             </div>
+            <div class="w-temp">
+                <span id="current-temp"></span><span id="degree"></span>
+            </div>
+            <div class="w-humid">
+                <span id="humid"></span><span id="percent"></span></span>
+            </div>
+            <div class="w-temp">
+                <span id="forcastTemp"></span>
+            </div>
+            
         </section>
         
     </main>
@@ -67,8 +79,8 @@
 
 
     </footer>
-    <script defer src="scripts/fresh.js"></script>
-    <!-- <script defer src="scripts/spotlight.js"></script>
-    <script defer src="scripts/weather.js"></script> -->
+    <!-- <script defer src="scripts/fresh.js"></script> -->
+    <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </body>
 </html>

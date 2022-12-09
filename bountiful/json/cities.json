@@ -2,38 +2,38 @@
     "cities": [
         {
             "name": "Los Angeles",
-            "info": "",
-            "img": "",
+            "info": "Los Angeles is home to renowned museums, unique hotels, diverse experiences and 75 miles of sunny coastline. The best way to discover LA is by exploring all of the vibrant multicultural neighborhoods.",
+            "img": "images/cta-300-375.jpg"
         },
         {
             "name": "Costa Mesa",
-            "info": "",
-            "img": "",
+            "info": "One of California's most eclectic and vibrant cities. Costa Mesa residents enjoy a mild Southern California climate. The City's location provides easy access to many of Southern California's major attractions, including beaches, mountain areas, high and low deserts, Disneyland, Knott's Berry Farm, Palm Springs and Los Angeles. Farmers Market every Tuesday.",
+            "img": "images/cta-300-375.jpg"
         },
         {
             "name": "Del Mar",
-            "info": "",
-            "img": "",
+            "info": "Incorporated in 1959, the City of Del Mar is a quaint seaside village located just 20 miles north of San Diego.  With a population of approximately 4,200 people, and covering just 2.2 square miles, Del Mar is known for its vibrant small-town atmosphere. Del Mar attracts residents, and upwards of 2 million visitors annually from all over the world, who come to enjoy the beautiful dog-friendly beaches, hiking trails, scenic views, and the many shops and dining opportunities located within the Del Mar village.",
+            "img": "images/cta-300-375.jpg"
         },
         {
             "name": "Carlsbad",
-            "info": "",
-            "img": "",
+            "info": "Known as 'The Village by the Sea,' the city of Carlsbad offers the charm of a European town with the conveniences of a large city. As you wander streets lined with antique stores, boutique shops, and sidewalk cafes, you will soon discover much more, including miles of coastline, beautiful flower gardens and world-class resorts. Farmers Market every Wednesday.",
+            "img": "images/cta-300-375.jpg"
         },
         {
             "name": "Encinitas",
-            "info": "",
-            "img": "",
+            "info": "Located along six miles of Pacific coastline in northern San Diego County, the city of Encinitas offers a unique blend of old-world charm and sophistication, and new-world culture. Incorporated in 1986, the city brought together the communities of New Encinitas, Old Encinitas, Cardiff-by-the-Sea, Olivenhain and Leucadia to create a single city rich in history and steeped in tradition.",
+            "img": "images/cta-300-375.jpg"
         },
         {
             "name": "Dana Point",
-            "info": "",
-            "img": "",
+            "info": "The official city motto is “Harboring the Good Life,” and we like to reflect that in our life here in Dana Point. Dana Point is home to 35,110 residents and is characterized by nearly seven miles of prominent coastal bluffs and rolling hills along the Pacific Ocean.",
+            "img": "images/cta-300-375.jpg"
         },
         {
             "name": "San Diego",
-            "info": "",
-            "img": "",
-        },
+            "info": "Picture perfect weather, miles upon miles of sandy beaches, cool ocean breezes, dozens of fun and educational attractions, and a consummate laid-back attitude attract more than 30 million visitors annually. Part of that draw is an average temperature that varies little from 70 degrees and only 42 rainy days per year. The city retains an intimate charm with charismatic neighborhoods and communities such as Carlsbad, Coronado, Del Mar, the Gaslamp Quarter, Point Loma, Chula Vista, Old Town, La Jolla, North Park, and many others. These neighborhoods have unique identities that combine to create a city rich in exploration and diversity.",
+            "img": "images/cta-300-375.jpg"
+        }
     ]
 }

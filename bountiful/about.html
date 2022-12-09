@@ -33,23 +33,41 @@
     </header>
     
     <main>
-        
-        <form method="post" target="_self" id="form">
-           
-            <fieldset>
-                
-            
-                    <label class="">First Name* <input type="text" name="fname" required></label>
-                    <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com" id="email"></label>
-                    <label class="field1">Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234" id="phone"></label>
-                    <label ></label><select type="text" id="myData"></select>
-                    <label></label><select type="text" id="myData"></select>
-                    <label></label><select type="text" id="myData"></select>
-                    <label id="hidden"><input type="hidden" id="submissionTime" name="submissionTime"></label>
-                    
-            </fieldset>
        
+        
+        <section class="cta">
+            <div class="top">
+                <button class="button">Click here to pick a drink</button>
+            </div>
+            <picture class="img-top">
+                <source media="(max-width: 300px)" srcset="images/cta-300-375.jpg">
+                <source media="(max-width: 500px)" srcset="images/cta-600-750.jpg">
+                <img src="images/cta-900-1125.jpg" alt="small town">
+            </picture>
+        </section>
+        <section>
+            <div class="boxes spotlight">
+                <article id="cards" class="spot"></article>
+            </div>
+        </section>
+        <section>
+            <picture>
+                <img src="" alt="">
+            </picture>
+        </section>
+        <section class="weather">
+            <div>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+
+    </footer>
     <script defer src="scripts/fresh.js"></script>
-    
+    <!-- <script defer src="scripts/spotlight.js"></script>
+    <script defer src="scripts/weather.js"></script> -->
 </body>
 </html>

@@ -1,54 +1,77 @@
-const fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+// const fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
-const getTemples = async () => {
+const getFruit = async () => {
   const response = await fetch(
     "https://brotherblazzard.github.io/canvas-content/fruit.json"
   );
-  templeList = await response.json();
-  output(templeList);
+  fruitList = await response.json();
+  output(fruitList);
 };
-getTemples();
+getFruit();
 
-const output = (temples) => {
-  temples.forEach((temple) => {
-    let article = document.createElement("article");
+const output = (data) => {
+  // fruits.forEach((data) => {
 
-    let templeName = document.createElement("h3");
-    templeName.textContent = temple.name;
+    let dropdown = document.querySelector("#myData");
+    dropdown.length = 0;
 
-   
+    let defaultOption = document.createElement('option');
+    defaultOption.text = 'Choose ';
 
-    article.appendChild(templeName);
-   
+    dropdown.add(defaultOption);
+    dropdown.selectedIndex = 0;
 
-    document.querySelector("#myData").appendChild(article);
-  });
-};
+    let option;
+    
+    	for (let i = 0; i < data.length; i++) {
+          option = document.createElement('option');
+      	  option.text = data[i].name;
+      	  
+      	  dropdown.add(option);
 
-
-
-// async function getFruits() {
-//   try {
-//     const response = await fetch(fruitURL);
-//     if (response.ok) {
-//       const data = await response.json();
-//       console.log(data);
-//       getFruitList(data);
-//     } else {
-//       console.log(`Response not OK ${await response.text()}`);
-//       throw Error (await response.text());
-//     }
-//   } catch (error) {
-//       console.log(error);
-//   }
-  
-// };
-
-// getFruits();
-
-// function getFruitList(data) {
-//   console.log(data);
-//   results = data;
+      }
+    // let article = document.createElement("article");
+    // let fruitName = document.createElement("h3");
+    // fruitName.textContent = fruit.name;
+    // article.appendChild(fruitName);
+    // document.querySelector("#myData").appendChild(article);
+  // });
+}; 
 
 
-// }
+// let dropdown = document.getElementById("myData");
+// dropdown.length = 0;
+
+// let defaultOption = document.createElement('option');
+// defaultOption.text = 'Choose ';
+
+// dropdown.add(defaultOption);
+// dropdown.selectedIndex = 0;
+
+// const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+
+// fetch(url)  
+//   .then(  
+//     function(response) {  
+//       if (response.status !== 200) {  
+//         console.warn('Looks like there was a problem. Status Code: ' + 
+//           response.status);  
+//         return;  
+//       }
+
+//       // Examine the text in the response  
+//       response.json().then(function(data) {  
+//         let option;
+    
+//     	for (let i = 0; i < data.length; i++) {
+//           option = document.createElement('option');
+//       	  option.text = data[i].name;
+      	  
+//       	  dropdown.add(option);
+//     	}    
+//       });  
+//     }  
+//   )  
+//   .catch(function(err) {  
+//     console.error('Fetch Error -', err);  
+//   });
