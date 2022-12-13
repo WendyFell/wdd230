@@ -1,9 +1,9 @@
 /* Base views */
 :root {
-    --primary-color: hsl(84, 38%, 43%);
-    --secondary-color: hsl(85, 67%, 23%);
-    --accent1-color: hsl(193, 91%, 43%);
-    --accent2-color: hsl(196, 74%, 61%);
+    --accent1-color: hsl(84, 38%, 43%);
+    --accent2-color: hsl(85, 67%, 23%);
+    --primary-color: hsl(193, 91%, 43%);
+    --secondary-color: hsl(196, 74%, 61%);
     --accent3-color: hsl(47, 53%, 79%);
     --accent4-color: hsl(36, 91%, 49%);
 
@@ -12,7 +12,7 @@
 
 
 }
-
+/* General styling */
 *,
 *::before,
 *::after {
@@ -22,7 +22,7 @@
 * {
     margin: 0;
     padding: 0;
-    font: inherit; /* resets font sizes */
+    font: inherit; 
 }
 
 img,
@@ -32,19 +32,32 @@ svg {
     display: block;
 }
 
-html {
-    background-color: var(--primary-color);
-}
 
+/* call to action */
 .cta {
     display: flex;
     flex-direction: column;
-    
+    background-color: var(--secondary-color);
 }
-.top {
-    width: 50%;
-}
+
 
 .button {
     background-color: var(--accent4-color);
+}
+
+/* city spotlight */
+.spot{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+}
+.spotStyle {
+    outline: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.spotStyle img{
+    margin-left: auto;
+    margin-right: auto;
 }
