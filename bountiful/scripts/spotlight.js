@@ -24,6 +24,7 @@ async function getData() {
 						
 			icon.setAttribute("src", allCities[rand].img);
 			icon.setAttribute("alt", `${allCities[rand].name}'s icon`);
+			icon.setAttribute("loading", "lazy");
 			list.add("spotStyle");
 					
 			card.appendChild(h3);

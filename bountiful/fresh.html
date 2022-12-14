@@ -16,26 +16,27 @@
 </head>
 <body>
     <header>
-        <div class="logoHeader">
-            <img src="images/Logo-120.png">
-        </div>
-        <nav class="navigation">
-            <ul>
+        <nav class="head">
+            <div class="logoHeader">
+                <a href="index.html"><img src="images/Logo-120.png"></a>
+            </div>
+            <ul class="navigation">
+                <li><a class="menu" href="#"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="about.html">About Us</a></li>
                 
             </ul>
-        </nav>
-        <div class="rightHeader">
-
-        </div>
+         </nav>
     </header>
     
     <main>
         <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
-        
-        <form method="post" target="_self" id="form">
+        <section>
+
+        </section>
+
+        <form action="" method="post" target="_self" id="form">
            
             <fieldset>
                 
@@ -43,13 +44,15 @@
                     <label class="">First Name* <input type="text" name="fname" required></label>
                     <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com" id="email"></label>
                     <label class="field1">Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234" id="phone"></label>
-                    <label ></label><select type="text" id="myData"></select>
-                    
-                    <label id="hidden"><input type="hidden" id="submissionTime" name="submissionTime"></label>
+                    <!-- <select name="fruit" class="custom-select" multiple></select> -->
+                    <div class="select"></div>
+                    <!-- <label ></label><select type="text" id="myData"></select> -->
+                    <!-- <label id="hidden"><input type="hidden" id="submissionTime" name="submissionTime"></label> -->
                     
             </fieldset>
        
     <script defer src="scripts/fresh.js"></script>
+    <script defer src="scripts/main.js"></script>
     
 </body>
 </html>

@@ -5,9 +5,9 @@ async function populate() {
   
     const response = await fetch(request);
     const superHeroes = await response.json();
-  
+  console.log(superHeroes);
     populateHeader(superHeroes);
-    populateHeroes(superHeroes);
+    // populateHeroes(superHeroes);
   
   }
 
@@ -15,6 +15,7 @@ async function populate() {
     const header = document.querySelector('header');
     const myH1 = document.createElement('h1');
     myH1.textContent = obj.squadName;
+    console.log(obj.squadName);
     header.appendChild(myH1);
   
     const myPara = document.createElement('p');

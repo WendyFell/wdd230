@@ -1,4 +1,20 @@
 /* Tablet views */
 @media only screen and (min-width: 37.5em) {
-    
+
+    .navigation {
+		display: flex;
+		
+		
+	}
+	.navigation li {
+		display: block; 
+		
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+
+	
+	
 }    
