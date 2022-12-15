@@ -22,3 +22,5 @@ const output = (data) => {
       }
     
 }; 
+
+// function calculateDrink()

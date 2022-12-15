@@ -3,8 +3,8 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#desc");
 const humid = document.querySelector("#humid");
 const forcastTemp = document.querySelector("#forcastTemp");
-const url = "https://api.openweathermap.org/data/2.5/weather?q=West+Jordan&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=West+Jordan&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
 
 async function apiFetch() {
     try {

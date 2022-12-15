@@ -191,27 +191,66 @@ nav {
 
 
 /* fresh page */
-.select {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 100%;
-    width: max-content;
-    height: auto;
-    outline: 1px solid black;
-}
-
-.select-item {
-    width: max-content;
-    height: auto;
-    padding: 5px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 3px;
+.body {
     background-color: var(--primary-color);
-    transition: background-color .1s;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.main-form {
+    display: flex;
+    flex-direction: column;
 }
 
-.select-item--selected {
+
+form {
+    padding: .5rem 2%;    
     background-color: var(--accent2-color);
-    color: var(--secondary-color);
+    margin: 1rem auto ;
+    max-width: 400px;    
 }
+form fieldset {
+    margin: 2rem 1px;
+    padding: .5rem 2%;
+}
+
+form label.field1,
+form label.select {    
+    padding-top: .95rem;
+    font-family: var(--ff-heading);
+    color: var(--accent3-color);
+}
+
+form label.field1 input,
+form label.field1 textarea {    
+    width: 100%;
+    padding: .75rem;    
+    background-color: var(--accent3-color);
+    border: var(--accent1-color);
+    font-family: Poppins, serif;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+#myData {
+    font-family: var(--ff-body);
+    color: var(--accent2-color);
+}
+
+::placeholder {
+    font-size: .9rem;
+}
+
+button.submit {
+    background-color: var(--accent4-color);
+    color: var(--accent2-color);
+    padding: 1.5rem;
+    margin: 2%;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    width: 100%;    
+    max-width: 20rem;
+    border: none;
+} 
