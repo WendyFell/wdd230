@@ -36,7 +36,7 @@
 
         </section>
 
-        <form action="" method="post" target="_self" id="form">
+        <form action="fresh.html" target="_self" id="form">
            
             <fieldset>
                 
@@ -45,7 +45,13 @@
                     <label class="field1">Email* <input type="email" name="email" required placeholder="someone@email.com" id="email"></label>
                     <label class="field1">Phone Number* <input type="tel" name="phone" required placeholder="123-555-1234" id="phone"></label>
                     
-                    <div class="select"></div>
+                    <label class="select">Choose 3 fruits, ctrl or command click to select</label>
+                    <select type="text" id="myData" multiple size="4"></select>
+                    <label class="field1">Special Instructions if any: <textarea name="specialInstructions" rows="4" cols="50"></textarea></label>
+                    <div>
+                        <button type="submit" onclick="calculateDrink()">Calculate drink nutrition</button>
+                    </div>
+                    <!-- <div class="select"></div> -->
                     <!-- <select name="fruit" class="custom-select" multiple></select> -->
                     <!-- <label ></label><select type="text" id="myData"></select> -->
                     <!-- <label id="hidden"><input type="hidden" id="submissionTime" name="submissionTime"></label> -->

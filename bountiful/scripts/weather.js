@@ -4,7 +4,7 @@ const captionDesc = document.querySelector("#desc");
 const humid = document.querySelector("#humid");
 const forcastTemp = document.querySelector("#forcastTemp");
 const url = "https://api.openweathermap.org/data/2.5/weather?q=West+Jordan&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
-const forcastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=West+Jordan&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=West+Jordan&units=imperial&appid=c3d02f27c3312f72ec8e93f91fda6172";
 
 async function apiFetch() {
     try {
@@ -48,4 +48,6 @@ function displayResults(data) {
 };
 
 document.getElementById("degree").innerHTML = "°F";
-document.getElementById("percent").innerHTML = "%";
+document.getElementById("percent").innerHTML = "% Humidity";
+
+

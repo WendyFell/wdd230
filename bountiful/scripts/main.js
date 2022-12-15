@@ -11,3 +11,6 @@ document.querySelectorAll(".navLink").forEach(link => {
         link.setAttribute("aria-current", "page")
     }
 });
+
+const date2 = document.querySelector("#date2");
+date2.innerHTML = new Date(document.lastModified).toLocaleDateString("en-US");
